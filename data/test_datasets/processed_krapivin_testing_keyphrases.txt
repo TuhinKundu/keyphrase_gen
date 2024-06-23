@@ -1,0 +1,400 @@
+collaborative filtering ; customer relationship management ; e commerce ; recommender systems ; dependency networks ; association mining
+semantics ; temporal logic
+knowledge representation ; reasoning about actions ; action languages ; commonsense reasoning
+logical representations ; cognitive robotics ; subsumption architecture
+tree width ; edge partitions ; small components ; vertex partitions
+routing ; traffic engineering ; modeling ; bgp
+distributed data mining ; bayesian network ; collective data mining ; heterogeneous data ; web log mining
+performance ; information retrieval ; world wide web ; search engine
+hypergraph ; <digit> hitting set ; exact algorithm ; minimum transversal
+approximation algorithms ; location management ; np hardness ; conference call ; convex optimization
+degeneracy ; simplex method ; cycling ; expand
+continuous compilation ; continuous testing ; test first development ; unit testing
+model checking ; coverage ; red black trees ; symbolic execution ; testing object oriented programs
+adaptability ; mode selection ; multi mode systems ; program steering
+model checking ; xml ; spin ; msl ; xml schema ; xpath ; promela ; web service
+approximation algorithms ; k median ; k means ; discrete location theory ; unsupervised clustering
+clustering ; approximation algorithm ; document classification
+graph theoretic clustering ; high dimensional spaces ; sparse partitions
+rayleigh taylor simulation ; arbitrary lagrangian eulerian ale simulations ; element validity ; mesh untangling ; quadrilaterals ; triangles
+online computation ; hierarchical cooperative caching
+program derivation ; program inversion
+iterative methods ; accuracy ; tikhonov regularization ; finite precision arithmetic ; shifted systems
+implicit restarting ; pseudospectrum ; deflation ; lanczos bidiagonalization ; harmonic ritz values ; refined singular vectors
+verification ; real time ; specification ; design ; refinement
+competitive ratio ; on line algorithms ; accomodating sequences ; seat reservation problem
+admission control ; notification ; online scheduling ; firm deadlines
+leader election ; multicast
+oaep ; provable security ; public key encryption ; rsa
+clustering ; smoothing ; aspect models ; cluster based language models ; interpolation model ; language modeling
+relational algebra ; fagin 's theorem ; equation ; nested relation ; parity ; sparse expression
+hardness of approximation ; graph coloring ; np hardness ; pcp theorem
+data mining ; data cube ; gradient analysis ; iceberg query ; antimonotonicity ; dimension based pruning ; constraint based pruning ; complex measures
+formal methods ; functional programming ; model checking ; software verification ; erlang
+logic ; type theory ; topology ; domain theory ; realizability
+partial evaluation ; semantics ; program generation
+linear logic ; categorical models
+domain theory ; denotational semantics ; program verification ; object logic ; programming logic
+graph coloring ; register allocation ; copy coalescing ; noncopy coalescing
+mobile agent ; diffuse computation ; finite state agent ; intermittent communication ; sensor net ; stable computation
+group communication ; provable security ; universal composability ; group key exchange
+visual cortex ; euclidean invariant computation ; fokker planck equation ; boundary completion ; shiftable basis
+cryptography ; distributed audit ; entropy ; metering ; secret sharing
+xml ; automata ; first order logic ; expressiveness ; pebbles ; monadic second order logic ; infinite alphabets ; registers
+reflection ; rewriting logic ; membership equational logic ; metalogics
+on line algorithms ; searching ; bayesian models ; randomized adversary
+verification ; refinement ; communicating sequential processes ; compositionality ; behaviour abstraction ; theory of parallel and distributed computation
+covert channel ; information hiding ; one time pad ; perfect security ; subliminal channel ; universal data compression
+minimization ; implicit computational complexity ; non deterministic partial multifunctions ; safe recursion
+linear logic ; finite model theory ; complexity lambda calculus
+computational geometry ; convex hulls ; in situ ; in place
+majority voting ; mix networks ; election scheme ; membership testing
+sensor networks ; deployment ; collaborative target detection ; exposure ; value fusion
+tilings ; quasicrystals ; pisot numbers ; beta lattices ; plane groups
+data mining ; graph mining
+theorem proving ; static analysis ; dynamic analysis ; invariant detection
+linear programming ; approximation algorithm ; flow control ; primal dual
+refinable functions ; symmetry ; framelet filter banks ; low pass and high pass filters ; matrix splitting ; tight wavelet frames
+numerical computation ; termination analysis
+binary decision diagrams ; symbolic model checking ; probabilistic model checking
+test sequence generation ; binary decision diagrams ; symbolic model checking
+group communication ; group key management ; peer groups ; secure communication
+tcp ; bandwidth delay product ; buffer size ; internet router
+naming ; distributed hash tables ; global identifiers ; internet architecture ; middleboxes ; name resolution
+machine learning ; gaussian processes ; character animation ; inverse kinematics ; motion style ; non linear dimensionality reduction ; style interpolation
+implementation ; parametric search
+scheduling ; delay bounds ; earliest deadline first ; packet routing ; weighted fair queueing
+boolean functions ; property testing ; juntas ; discrete fourier analysis
+implicit surfaces ; polygonization ; iso surfaces
+partial evaluation ; embedded languages ; macros ; value flow analysis
+local search ; traffic engineering ; shortest path routing
+sensor fusion ; nonmonotonic logic ; defeasible observations ; free default logic ; multiple extension problem ; prioritized default logic
+self stabilization ; clock synchronization ; byzantine failures
+functional programming ; dynamic loading ; dynamic typing ; extension languages ; plugins ; staged type inference
+reactive systems ; event algebra ; event detection ; resource efficiency
+abstract interpretation ; multi stage programming
+application execution ; pervasive computing ; mobile device ; adaptive offloading ; dynamic partitioning
+image restoration ; graph algorithms ; segmentation ; stereo ; minimum cut ; maximum flow ; index terms energy minimization ; multicamera scene reconstruction
+xor lemma ; average case complexity ; hardness amplification ; product theorems
+distributed algorithms ; lower bounds ; fault ; tolerence ; work complexity
+concurrency ; equational logic ; process algebra ; complete axiomatizations ; bccsp ; hennessy milner logic ; nested simulation ; nested trace semantics ; non finitely based algebras ; possible futures
+knowledge representation ; order sorted logic ; label based expressions ; resolution system ; terminological knowledge
+embedding ; ad hoc networks ; unit disk graph ; sensor networks ; virtual coordinates
+debugging ; formal specification ; parallel programming ; inference mechanisms ; consistency ; design ; program debugging ; larch power ; larch shared language specifications ; checkability ; concurrent algorithms ; development ; static semantics ; theory containment
+scheduling ; wireless lan ; medium access ; multiuser diversity
+computational complexity ; counting classes ; arithmetic circuit
+randomized algorithms ; property testing ; bipartiteness
+linear equations ; ordering methods ; sparse nonsymmetric matrices
+approximation algorithm ; multiway cut
+lattice basis reduction ; branching on hyperplanes ; frobenius number
+energy minimization ; statistical models ; part based object recognition
+constraint programming ; rule based programming ; finite domain
+type systems ; prolog ; subtyping ; constraint logic programming ; metaprogramming
+automata ; computer aided verification ; backward simulations ; forward simulations ; history variables ; normed simulations ; prophecy variables ; refinement mappings
+mobile ad hoc networks ; mobility modeling ; node spatial distribution ; random waypoint model
+scheduling ; asymmetric communication ; broadcast data dissemination ; push based techniques ; time critical data
+linearization ; wait free synchronization
+digital signatures ; bilinear maps ; elliptic curves ; pairings ; short signatures
+ad hoc networks ; provable security ; routing protocols ; on demand source routing ; simulatability
+anonymity ; interdomain routing ; mix networks
+complexity ; elementary affine logic ; graph rewriting ; optimal reduction
+computational learning theory ; pac learning ; dnf formula ; monotone boolean function
+incremental algorithm ; batch algorithm ; dynamic invariant detection ; reversing optimizations
+biometric keying ; chosen perturbation security ; fuzzy extractor ; zero storage biometric authentication
+broadcast encryption ; forward security ; id based encryption
+programming environments ; software development environments ; language centered environments ; method based environments ; sociological metaphor ; structure oriented environments ; toolkit environments
+root finding ; dense output ; event location
+mixed methods ; incompressible magneto hydrodynamics ; weighted regularization
+point location ; dynamic data structures ; external memory ; i o efficient
+modularity ; protocol ; lower bound ; upper bound ; communication complexity class ; non determinism ; probabilism
+distributed algorithm ; dynamic optimization ; cellular network ; adaptive protocol ; distributed load balancing ; distributed location management ; mobile communication network
+compiler optimizations ; index terms pipeline processors ; instruction fetch ; branch prediction ; trace cache
+markov chains ; random walks ; hypercubes ; balanced permutations ; knapsack problem ; random permutations ; random sampling
+consistent global states ; distributed debugging ; global predicate detection ; real time monitoring
+fault containment ; mutual exclusion ; self stabilization
+probabilistic algorithms ; secure multicast ; wide area network
+fault tolerance ; asynchronous distributed system ; checkpointing protocols
+protocol composition ; distributed protocols ; multifunction protocols ; safety and liveness properties
+fault tolerance ; replication ; byzantine failures ; quorum systems
+distributed algorithms ; asynchronous automata ; bounded time stamps ; synchronous communication
+leader election ; distributed algorithm ; complete networks ; message complexity
+fault tolerance ; randomized algorithms ; shared memory ; atomicity ; adaptive adversary ; asynchronous distributed protocols ; naming problem ; symmetry breaking ; test and set objects ; unique process id ; wait free read write registers
+distributed memory ; communication ; lower bounds ; matrix multiplication
+approximation algorithms ; randomized rounding ; set cover ; partial covering ; primal dual methods ; vertex cover
+unsatisfiability ; mus selection ; infeasibility analysis
+graph drawing ; expansion ; crossing number ; pair crossing number
+on demand routing ; ad hoc networks ; wireless routing
+online learning ; web mining ; corpus construction ; query generation
+recommender systems ; mixture models ; maximum entropy model ; sequence modeling
+privacy ; data mining
+data warehouse ; index terms views ; view selection ; materialization
+efficiency ; stochastic games ; ex post equilibrium ; learning equilibrium ; multi agent learning ; repeated games
+self stabilization ; rewriting systems
+quantum computing ; locally decodable codes ; private information retrieval
+embeddings ; metrics ; tree metrics
+parallel programming ; grid computing ; heterogeneous computing ; load balancing ; scatter operation
+resource location ; gossip ; decentralized algorithm
+sampling ; matrix algorithms ; low rank approximation
+compositions of an integer ; geometric random variables ; random compositions
+approximation algorithm ; graph partitioning ; linear programming relaxation ; metric space
+embedding ; components of solutions ; generic points ; homotopy continuation ; irreducible components ; numerical algebraic geometry ; polynomial system
+ad hoc polymorphism ; generativity ; intensional type analysis ; reflexivity
+associated types ; self optimising libraries ; type classes ; type directed translation ; type indexed types
+linear programming ; petri nets ; marked graphs ; ergodicity ; incidence matrix ; mono t semiflow net subclasses ; persistent nets ; synchronized queuing networks ; throughput bounds ; unique consistent firing count vector
+pattern recognition ; classification ; probability ; picture processing ; statistics ; parameter estimation ; markov random field ; aic information criterion ; causal gaussian autoregressive model ; coarse resolution ; deterministic greedy algorithm ; multiple resolution segmentation ; posteriori probability ; spatial correlation ; statistical behavior ; textured images ; unsupervised texture segmentation ; variance
+pattern recognition ; <digit> image matching ; <digit> model ; levenberg marquardt method ; arbitrary curved surfaces ; curve fitting ; model based pattern recognition ; motion tracking ; picture processing
+user interaction ; delegation ; object oriented design ; real time animation ; electronic books ; interactive illustrations
+differential geometry ; geodesic curvature ; non distorted texture mapping ; piecewise surface flattening
+packet switching ; computer networks ; minimal order loop free routing strategy ; multiorder routing strategy ; network adaptability ; operational overhead
+interference detection ; robotics ; boolean algebra ; collision detection ; solid modeling ; constructive solid geometry ; representation simplification
+distributed representations ; grammatical structure ; simple recurrent networks
+trees mathematics ; multiprocessor interconnection networks ; embeddings ; butterfly networks ; complete binary trees ; wrap around connections
+geometry ; programming environments ; configuration management ; user interfaces ; automatic programming ; unix environment ; custom interface code ; diverse software components ; heterogeneous execution environments ; heterogeneous programming environments ; interfacing requirements ; module interconnection language attributes ; packaging system
+software maintenance ; program testing ; program slicing ; linear time ; line number ; program slice ; semantically consistent changes ; set inclusion ; single variable decomposition slices ; slice based decomposition ; software maintenance problem ; unmodified components
+self stabilization ; parallel programming ; formal logic ; adaptive systems ; programming theory ; adaptivity ; token ring networks ; adaptive distributed programs ; adaptive sequential programs ; composition operators ; constituent programs
+parallel processing ; performance evaluation ; scheduling ; multiprocessing systems ; interprocessor communication ; process scheduling ; programming environment ; network contention ; process synchronization ; bbn gp1000 ; numa shared memory multiprocessor ; analytical models ; memory contention ; nonuniform memory access ; optimal strategies ; parallel processing performance ; remote memory access
+optimization ; information retrieval ; text retrieval ; document retrieval ; access method ; coding methods ; signature file ; superimposed coding
+logic programming ; parallel programming ; parallel languages ; ghc ; parlog ; clean semantics ; concurrent logic programming languages ; control facilities ; execution conditions ; language translation ; lingua franca ; nonflat guards
+computational complexity ; parallel algorithms ; graph theory ; complexity ; automatic parallelization ; structured programming ; gotos ; control dependence relations ; control flowgraphs ; control flow cycles ; control flow normalization algorithm ; node splitting techniques ; syntax tree
+debugging ; race conditions ; parallel programs ; critical sections ; data races ; nondeterminacy
+abstraction levels ; combined simulation ; homomorphism ; multimodeling ; qualitative simulation ; systems theory
+database theory ; relational databases ; query languages ; systems analysis ; sql ; views ; design tradeoffs ; structured query language ; run time behavior ; dp management ; db2 environment ; redwar ; benchmark workload ; database catalog ; relational database workload analyzer
+scheduling ; real time systems ; fault tolerant computing ; aerospace computing ; galileo spacecraft ; asynchronous real time systems ; concurrently executing processes ; data consistency constraints ; modeling timing ; precedence ; unsafe error recovery schedules
+mathematical software ; bessel function ; hyperbolic bessel function ; modified bessel function ; order zero and one ; portable software ; special function ; vectorized software
+multimedia ; disk scheduling
+reinforcement learning ; asynchronous dynamic programming ; temporal differences
+remote procedure call ; asynchronous message passing ; audio servers ; distributed client server architecture ; speech and studio applications ; speech recognition and synthesis
+visualization ; programming by example ; graphical user interface ; constraints ; direct manipulation ; layouts
+computational geometry ; linear programming ; combinatorial optimization ; randomized incremental algorithms
+virtual reality ; user interface software ; interactive <digit> graphics
+software tools ; portability ; gui ; rapid prototyping ; graphical user interface ; pedagogy ; user interface toolkit ; uims ; export ; learnability
+disambiguation ; document retrieval ; semantically based search ; word senses
+computational complexity ; simulation ; fault tolerant computing ; software reliability ; mutation testing ; software faults ; petri nets ; mutation analysis ; nasa ; stochastic petri net ; correlated sampling ; dependencies ; fault tolerant software systems ; module execution times ; mutation tested code ; numerical estimates ; planetary lander control software ; real time software reliability ; synchronization structure
+parallel programming ; real time systems ; parallel languages ; program verification ; critical properties ; critical real time systems ; data flow language lustre ; dataflow approach ; ergonomy ; formal design ; synchronous data flow language ; traditional description tools ; verification methods ; verification tool lesar
+automated reasoning ; theorem proving ; polynomial time algorithm ; inference rules ; proof systems ; mechanical verification ; proof theory ; machine inference
+queuing networks ; randomized algorithms
+software process ; logic programming ; concurrency ; multiuser programming environment ; rule based programming ; software process modeling
+software testing ; fault based testing ; mutation analysis ; program schemata
+or parallel execution models
+algebra ; logic ; relational database ; database schema ; tuple calculus
+logic programming ; computer algebra systems
+fortran ; maple ; unix shell
+instance based learning ; nearest neighbor ; exemplar based learning ; protein structure ; text pronunciation
+contour model ; visual execution model
+software process ; process modeling ; metaprocess ; process evolution and improvement
+wormhole routing ; store and forward routing ; adaptive routing ; message routing ; k ary n cubes ; multicomputer networks ; deadlocks
+distributed systems ; computer supported cooperative work ; application sharing ; x window system ; x protocol multiplexer ; computer conferencing ; joint viewing and tele operation service
+random walk ; weyl group ; hyperbolic bessel function ; representation of lie group ; tensor power
+performance ; message passing ; telecommunication network routing ; fault tolerant computing ; concurrency control ; routing algorithms ; graph theory ; wormhole networks ; index termsdeadlock free adaptive routing ; adaptive algorithm ; channeldependency graph ; fault tolerant algorithms
+statistics ; image coding ; vapnik chervonenkis dimension ; learning systems ; vector quantisation ; empirical simulations ; formal bounds ; memoryless vector quantizer ; small training sets ; test distortion ; training image ; training set distortion ; vector quantizer codebooks
+types ; object store ; complex object ; nested graph ; rule based query and update language
+model checking ; expspace completeness ; dense time ; discrete time ; linear time temporal logic ; real time requirements
+atomic register ; linearizability ; wait free synchronization
+computational geometry ; linear programming ; parallel computation ; probabilistic computation ; multidimensional search
+polymorphic type reconstruction ; type errors
+program slicing ; program dependence graph ; control dependence ; data dependence
+condensation ; abstract interpretation ; propositional logic ; groundness analysis
+semantics ; constraint logic programming
+deformable models ; finite elements ; dynamics ; free form deformation ; constraints ; cagd ; nurbs ; cross sectional shape design ; optimal curve and surface fitting ; shape metamorphosis ; solid rounding ; trimming
+surface fitting ; bayesian estimation ; multiresolution representation ; deformable surfaces ; fractal surfaces ; orthonormal wavelet basis ; stiffness matrix ; superquadrics
+advice classes ; boolean hierarchy ; nonuniform complexity classes ; optimization functions ; relativization ; restricted oracle access ; sparse np sets ; truth table reducibility
+poset ; transposition ; combinatorial gray code ; linear extension
+computational complexity ; interpolation ; arithmetic operations ; sparse rational functions
+path length ; binary search trees
+sparse sets ; np completeness ; program checking ; interactive proofs ; quadratic residuosity ; self reducibility
+dynamic programming ; tiling ; surface fitting ; triangulation ; surface reconstruction ; polyhedra ; geometric hashing ; curve matching ; branching surfaces ; slice interpolation
+code generation ; graph coloring ; register allocation
+formal verification ; model checking ; ctl ; moore machines ; computer aided verification ; temporal logics
+distributed algorithms ; distributed languages ; multiparty interaction ; committee coordination ; first order interaction ; interaction scheduling ; rendezvous
+grammatic ambiguity ; semantic unambiguity
+customization ; optimization ; profile based optimization ; object oriented programming
+multicommodity flow ; approximation ; vlsi routing ; concurrent flow ; graph separators
+implementation ; complex elementary functions
+genetic algorithms ; concept learning ; bias adjustment
+integrated learning ; representational shift ; rule extraction from neural networks ; theory refinement
+factorization ; matrix polynomials ; symmetries
+load balancing ; message passing ; distributed memory multiprocessors ; loop scheduling ; dynamic and static scheduling
+memory hierarchy ; temporal locality ; spatial locality ; cache architecture ; numerical codes
+data communication ; data distribution ; high performance fortran ; tensor products ; distributed memory machine
+computational complexity ; complexity classes ; resource bounded measure ; polynomial reductions ; dense languages ; sparse languages ; weak stochasticity
+performance evaluation ; modeling ; data locality ; numerical codes ; cache interferences or conflicts
+browsing ; hierarchies ; user interfaces ; table of contents
+abstract interpretation ; program analysis ; fixpoint algorithm
+formal specification ; inconsistency management ; requirements specification ; multiple views ; core ; the viewer ; viewpoints framework ; computer based viewpoints support ; consistency checking ; heterogeneous components ; inter viewpoint communication ; multiple viewpoints ; partial requirements specifications ; requirements specification method
+prototyping ; software prototyping ; software development ; process computer control ; hardware ; experimental design ; software ; computerised monitoring ; interactive cyclic view ; large scale long term development ; large scale process monitoring experiment ; long term process monitoring ; process monitoring experiment ; very large software system ; waterfall view
+multiprocessor interconnection networks ; crosstalk ; optical interconnections ; telecommunications ; time division multiplexing ; batcher spatial sorting network ; benes network ; bitonic decomposition ; control complexity ; exchange switches ; logic arrays ; multistage interconnection networks ; optical implementations ; optical information processing ; pipelined systems ; self routing spl lambda permutation network ; serial array time slot interchangers ; space to time mapping ; time division multiplexed systems ; time multiplexed optical multiprocessors ; time slot permuters ; time slot sorters
+shared memory systems ; hot spots ; parallel architectures ; message passing ; multiprocessors ; virtual machines ; index termsmultiprocessor interconnection networks ; design space ; arbitrary interconnection networks ; classification scheme ; combining set ; combining strategies ; message routing ; parallel access ; processor elements ; shared memory location ; simulationresults
+parallel architectures ; fault tolerant computing ; network routing ; software reliability ; fault tolerant routing ; message routing ; torus ; index termsmessage passing ; destination ; distributedcomputing system ; fault tolerant routing algorithm ; hexagonal mesh ; hexagonal meshes ; high probability ; mesh architectures ; parallelalgorithms ; routing scheme performance ; source ; square meshes
+neural networks ; active learning ; generalization ; queries ; version space
+decoding ; encoding ; hypercube networks ; gauss jordan elimination ; gray code encoding ; gray codes ; index termslinear algebra ; bit reversal ; hypercube communications algorithms ; hypercube multiprocessors ; indextransformation algorithms ; linear algebra framework ; matrix transpose ; shuffles ; vector reversal
+mobile computing ; consistency ; information systems ; new applications ; transaction management
+nonlinear optimization ; conjugate gradient algorithms ; line search algorithms ; truncated newton algorithms ; variable metric algorithms
+global illumination ; hierarchical radiosity ; a posteriori error bounds and estimates ; adaptive refinement ; importance
+error bounds ; global illumination ; radiosity ; boundary elements ; reflectance functions ; projection methods ; discretization ; linear operators
+user interfaces ; data visualization ; flow charts ; spreadsheets ; visual programming languages
+brdf ; reflection models ; lambert 's model ; moon reflectance ; rough surfaces
+delaunay triangulation ; functional minimization ; adaptive meshing ; fair surface design ; polygonal models
+object oriented programming ; abstract data types ; algebraic specification ; software testing
+wavelets ; curve fitting ; direct manipulation ; scan conversion ; curve compression ; curve editing ; curve smoothing
+concurrent systems ; temporal logic ; formal specifications ; visual languages ; graphical interval logic ; automated proof checking ; timing diagrams
+physically based modeling ; interaction ; constrained optimization ; adaptive sampling
+shape recovery ; surface fitting ; subdivision surfaces ; geometric modeling ; range data analysis
+clustering ; error bounds ; global illumination ; hierarchical radiosity
+multimedia applications ; layout ; interaction objects ; graphical applications ; interactive objects ; visual interaction ; visual interface design and management ; visual placement ; visual techniques
+visual programming ; constraints ; interaction techniques ; delegation ; direct manipulation ; user interface toolkits
+multimodal interaction ; direct manipulation ; two handed interaction ; graphical toolkit ; interaction styles
+graph coloring ; register allocation ; cregs ; ambiguous alias ; live range
+program optimization ; software prefetching ; data relocation ; cache conflicts ; data copying
+logic synthesis ; automatic instruction set design ; compile time optimization ; general purpose microarchitectures ; programmable logic
+navigation ; visualization ; information retrieval ; interaction paradigm
+program development ; tailorability ; aggregated views ; event control ; interaction engine
+formal methods ; trellis ; colored petri net ; coordination structure ; dynamic protocol ; moderated meeting ; process based hypertext hypermedia
+flexible coupling ; merging ; optimistic concurrency control ; versions
+multimedia ; user interface design ; distance learning ; broadcast video ; distributed presentations ; remote collaboration
+lower bound ; parallel ; chaining ; ackerman 's function ; prefix graphs ; superconcentrators
+compilers ; program optimization ; formal specifications ; program modularity ; software interfaces
+cache ; memory system ; trace driven simulation ; tlb ; trap driven simulation
+branch prediction ; branch target buffers ; profile based optimization ; trace scheduling
+articulated figures ; inverse kinematics ; nonlinear programming
+feedback controls ; parametric control problems ; second order sufficient conditions ; shooting methods ; solution differentiability
+stability ; robustness ; adaptive systems ; disturbances ; indirect adaptivecontrol ; robust performance ; time varyingplants ; unmodeled dynamics
+multiprocessors ; memory management ; competitive analysis ; on line algorithms ; page migration
+parallel programs ; fast fourier transform ; hypercube ; recursion ; batcher sort ; algebra of parallel programs ; prefix sum
+performance measurement ; application programming interface ; asynchronous transfer mode ; distributed network computing
+projective reconstruction ; epipolar geometry ; projective geometry ; this invariant ; uncalibrated images ; self calibration
+parallel algorithms ; image processing ; simd algorithms ; linear array ; scan line array processors ; video procesor
+markov random field ; texture segmentation ; bayes factor ; bayesian methods ; range images ; statistical image segmentation ; likelihoods
+testing ; program checking ; program verification ; interactive proofs ; probabilistic algorithms
+system architecture ; computational reflection ; collaborative applications ; meta object protocol ; open implementations
+symbolic computation ; fortran <digit> ; automatic differentiation ; global optimization ; nonlinear algebraic systems
+constraints ; flow analysis ; correctness proof
+false sharing ; bus based multiprocessors ; cache prefetching ; memory latency hiding
+constant propagation ; data flow analysis ; optimizing compilers ; value numbering
+decomposition ; composition ; temporal logic ; safety properties ; concurrent programming ; liveness properties ; modular specification
+algebraic specifications ; reasoning with nondeterminism
+jordan canonical form ; matrix powers ; nonnormal matrices ; pseudospectrum ; rounding errors
+instance based learning ; nearest neighbors ; exemplar based learning ; feature weights ; nested generalized exemplars
+performance analysis ; concurrent system ; queuing system ; reader writer ; lock queue
+thresholding ; evaluation ; document images ; locally adaptive binarization ; utility maps
+probabilistic analysis ; traveling salesman
+boolean functions ; decision trees
+software reuse ; software architecture ; mobile robots ; intelligent agents ; domain specific software architectures
+performance measurements ; gsm ; nmt ; cellular telephones ; wireless dial up connections
+system identification ; discrete event systems
+parameter estimation ; costate method ; evolution equations
+global convergence ; successive approximation ; integration convolution
+pattern matching ; lower bounds ; complexity ; string matching ; comparisons
+depth first search ; graph separators ; s t graphs ; bubblegraphs ; linear processor nc algorithms ; planar directed graphs ; strong connectivity
+linear programming ; integer programming ; derandomization ; linear codes ; set cover ; resource sharing ; probabilistic algorithms ; distributed networks ; file assignment
+computational complexity ; complete problems ; complexity classes ; resource bounded measure ; complexitycores ; polynomial reducibilities
+communication complexity ; private distributed computations
+finite automata ; kolmogorov complexity ; regular languages ; deterministic context free languages ; formal language theory ; pumping lemmas
+load balancing ; random walks ; expander graphs ; eigenvalues ; selection networks ; ramanujan graphs ; induced subgraphs
+constraint satisfaction problems ; path consistency ; consecutive ones property ; constraint networks ; constraint based reasoning ; relations ; row convexity
+switch ; buffer overflow ; gradual input ; multiplexor ; parallel queues ; service discipline
+approximation algorithm ; directed graph ; local improvement ; strong connectivity
+stability ; error analysis ; primal dual interior point methods
+polynomial size circuits ; p selective sets ; polynomial time reducibilities
+discrete event simulation ; time warp ; performance measurements ; parallel ; distributed ; time warp simulation ; pcs networks ; flexible analysis tools ; mobile communication ; mobile communications ; personal communication service ; simulation platforms ; telecommunication computing
+pvm ; time warp ; petri nets ; rs6000 cluster ; forecast models ; optimism control
+protocols ; protocol ; lower bound ; discrete event simulation ; critical path analysis ; parallel discrete event simulations
+shared memory systems ; storage management ; message passing ; discrete event simulation ; buffer management ; buffer storage ; kendall square research ksr <digit> machine ; cache coherent shared memory multiprocessors ; mall granularity parallel simulation applications ; message buffer memory ; message buffers ; multiprocessing programs ; multiprocessor cache coherence protocols ; multiprocessor based parallel simulators ; partitioned buffer pool approach ; partitioned pool mechanism ; receiver pool ; sender pool ; severe performance degradations ; shared memory time warp systems ; time warp simulation
+hard real time ; charts ; real time language ; timing constraint
+scientific visualization ; curvature ; boundary detection ; cognitive psychology ; human vision ; multivariate data ; preattentive ; target detection ; visual interactive simulation
+animation ; visual simulation ; multiresolution motion ; posture graphs ; real time animation
+real time vision ; active vision ; camera calibration ; recursive filter
+scale space filtering ; multiscale morphology ; signal analysis ; monotonic property ; scale space fingerprints
+genetic algorithms ; dna fragment assembly ; building blocks ; edge recombination crossover ; human genome project ; ordering problems
+unsupervised learning ; expectation maximization ; sequence analysis ; dna ; binding site ; biopolymer ; consensus sequence ; motif ; promoter ; protein
+concept learning
+data redistribution ; high performance fortran ; data parallel programming ; distributed memory architectures ; data decomposition ; processor mapping
+backpropagation ; experimental comparisons ; text to speech
+computational complexity ; complete problems ; complexity classes ; resource bounded measure ; weak completeness
+algorithms and complexity ; discrimination nets ; functional programming ; indexing ; pattern matching
+regular expressions ; np completeness ; labelled directed graphs ; polynomial time algorithms ; simple paths
+remote sensing ; parallel i o ; atmospheric correction ; high performance computing ; scalable parallel processing ; avhrr
+distributed memory ; connected components ; parallel machines ; performance modeling modelling ; hybrid algorithm
+pvm ; message passing ; distributed shared memory ; lazy release consistency ; treadmarks
+distributed computing ; heterogeneous computing ; optimal resource allocation ; chemical process optimization ; gigabit networks ; stochastic linear assignment problem
+shared memory multiprocessors ; parallelizing compilers ; compiler optimizations ; interprocedural data flow analysis
+debugging ; parallelism ; tools ; guard ; scientific computing ; relative debugging ; meteorology
+shared memory ; cache coherence ; lazy release consistency ; protocol processors
+compiler ; fortran ; communication optimization ; automatic parallelization ; optimizing compiler ; ibm sp2 ; hpf ; distributed memory compilation
+parallel processing ; parallel architectures ; performance evaluation ; parallelizing compilers ; program optimization ; cache optimization ; parallel algorithms and programs ; profiling and program tuning ; cfd computational fluid dynamics
+software tools ; real time systems ; logic design ; logic cad ; microprocessors ; microcontrollers ; chinook hardware software co synthesis system ; computer aided design tools ; custom logic ; design co simulation ; design time constraints ; embedded controller design ; error prone tasks ; function migration ; interface hardware ; interface software ; system components integration
+real time systems ; optimisation ; loops ; storage allocation ; program control structures ; data memory access ; embedded code generation ; exponential algorithm ; heuristic modification ; live variables ; minimal spill code ; optimal register assignment ; scientific code
+processor scheduling ; embedded systems ; real time systems ; timing constraints ; concurrency control ; software synthesis ; multiprocessing programs ; computer aided software engineering ; automatic processor mapping ; automatically generated application specific solution ; concurrent process system specification ; flexible execution models ; hardware resource utilization ; information processing systems ; internal representation model ; mobile satellite communication ; personal terminal receiver demodulator ; real time multi tasking ; static information ; time utilization
+network of workstations ; automatic parallelization ; grain size ; dynamic load balancing
+real time systems ; integer programming ; timing ; instruction level parallelism ; digital signal processing chips ; source coding ; automatic programming ; code generation techniques ; digital signal processing algorithms ; encoding restrictions ; exact timing behavior ; hard real time constraints ; integer programming model ; local code compaction ; programmable dsp ; rigid heuristics ; side effects ; time constrained code compaction
+parallel architectures ; scheduling ; circuit cad ; datapath ; application specific integrated circuits ; digital signal processing chips ; network synthesis ; dynamic scheduling ; pipeline processing ; dsp algorithms ; fft butterfly accelerator block ; application specific dsp accelerators ; controller architecture ; highly pipelined data paths ; pipelined dsp accelerator synthesis ; pipelined bit parallel hardware ; run time schedules ; silicon
+scheduling ; optimisation ; search space pruning ; search problems ; network synthesis ; high level synthesis ; schedule length ; <digit> design space ; <digit> design space ; <digit> scheduling problem ; voyager design space exploration system ; candidate clock lengths ; clock length ; clocks ; globally optimal solution ; three dimensional scheduling ; three dimensional design space ; tight bounds ; two dimensional design space
+scheduling ; real time systems ; circuit cad ; energy minimization ; application specific integrated circuits ; energy consumption ; digital signal processing chips ; scheduling algorithm ; power analysis ; dsp processor ; circuit state ; embedded dsp software ; energy reduction ; general purpose commercial microprocessors ; instruction sets ; instruction level power model ; low power scheduling ; measurement based power analysis ; micro architectural power model ; on chip booth multiplier
+elmore delay ; vlsi ; global routing ; bounded skew ; zero skew ; clock routing ; pathlength delay ; routing trees
+dynamic programming ; elmore delay ; timing optization ; dynamic power dissipation ; signal slew
+circuit analysis computing ; computational complexity ; binary decision diagrams ; time complexity ; digital arithmetic ; mtbdds ; arithmetic circuits verification ; boolean vectors ; hybrid decision diagrams ; integers ; linear expressions ; multi terminal binary decision diagrams ; symbolic model checking algorithms
+synthesis ; petri nets ; asynchronous circuits ; finite state machines ; transition systems
+test generation ; design verification ; error models ; logic simulation
+failure analysis ; failure recovery ; fault diagnosis ; fault location ; logic testing ; match requirement ; match restriction ; realistic bridging faults diagnosis ; single stuck at dictionaries ; single stuck at information ; stuck at diagnosis ; stuck at methods
+code generation ; digital signal processors ; instruction selection
+interconnect optimization ; vlsi routing ; performance driven layout ; optimal wiresizing
+power consumption ; behavioral synthesis ; low power vlsi design
+sather ; general control structures ; iteration abstraction
+multidimensional integration ; number theoretic nets and sequences ; quadrature ; quasi monte carlo methods ; quasi random sets
+parallel simulation ; synchronization protocol
+load balancing ; parallel algorithms ; broadcasting ; sorting ; parallel model ; personalized communication ; fast fourier transform ; matrix multiplication
+interconnection networks ; adaptive routing ; design methodologies ; deadlock avoidance ; virtual cut through ; store and forward
+fault tolerance ; concurrency ; synchronization ; distributed algorithms ; lower bounds
+processor allocation ; resource allocation ; load balancing ; task assignment ; task allocation ; majorization ; performance of parallel systems
+replicated databases ; availability ; quorum consensus ; replica control ; message overhead ; update synchronization
+mapping ; embedding ; divide and conquer algorithms ; binomial tree ; mesh connected machines ; routing ; wormhole routing ; store and forward routing ; contention ; dilation
+multiprocessor ; parallel i o ; workload characterization ; scientific computing ; parallel file system
+contention ; synchronization ; mimd ; parallel simulation ; direct execution simulation ; architectural simulation ; message passing programs
+tridiagonalization ; eigenvalue decomposition ; repeated eigenvalues
+graph algorithms ; sparse matrices ; approximate minimum degree ordering algorithm ; ordering algorithms ; quotient graph
+convexity ; nonsmooth analysis ; eigenvalue optimization ; fenchel conjugate ; semidefinite program ; spectral function ; unitarily invariant norm ; von neumann 's lemma ; schur convex ; extreme point ; group invariance ; subdifferential
+cache ; memory ; and storage hierarchies ; optimization of cache configurations ; trace driven simulations
+cache storage ; simulations ; operating system support ; lru replacement ; vliw architectures ; disk caching scheme ; dynamic rescheduling ; first time page faults ; high overhead programs ; low overhead object code compatibility ; overhead based replacement ; page replacement policies ; persistent rescheduled page cache ; program executions ; program performance ; run time software rescheduling
+optimising compilers ; compiler optimization ; code scheduling ; abstract model ; linear code regions ; long instruction word machines ; optimum scheduling ; profile driven instruction level parallel scheduling ; profile sensitive scheduler ; ranking branch instructions ; scheduling heuristic
+software pipelining ; instruction level parallelism ; modulo scheduling ; control intensive ; speculation ; modulo variable expansion
+resource allocation ; branch correctness ; conditional branch predictions ; dynamic branches ; processor resources ; static branches
+parallel architectures ; trace driven simulations ; instruction cache ; vliw architectures ; tinker experimental testbed ; compressed encodings ; compressed instruction encoding ; i fetch hardware ; instruction fetch mechanisms ; instruction words ; multiple instruction issue ; silo cache
+optical flow ; segmentation ; robust regression ; parameterized flow models ; local deformation
+causality ; feature detection ; edge detection ; scale space ; nonlinear filtering ; energy filters ; quadratic filters
+software pipelining ; instruction scheduling ; integer linear programming ; instruction level parallelism ; superscalar and vliw architectures
+reduced word ; coxeter group ; bruhat order ; weak order
+elmore delay ; vlsi ; interconnect delays ; rlc interconnections ; spice computed delay ; vlsi interconnects ; vlsi routing topologies layout ; analytical delay models ; arbitrary interconnect trees ; interconnect transfer function ; performance driven synthesis ; ramp input ; source sink delays
+logic design ; power consumption ; rtl designs ; gate level implementation ; glitching ; register transfer level estimation ; switching activity
+circuit cad ; transistor sizing ; ch posynomial programs ; stis ; driver buffer ; transistor and interconnect sizing ; wire sizing problem
+cad ; vlsi ; acm sigda benchmark circuits ; fiduccia mattheyses algorithm ; vlsi circuit partitioning ; cluster removal ; iterative improvement techniques ; look ahead algorithm ; partition quality ; spectral partitioner melo
+distributed processing ; fault tolerance ; reliability ; fail silence ; replicated processing
+loop parallelization ; combinatorial optimization ; loop carried dependences ; parallel prefix computation ; scan operator resource constrained parallel algorithms ; strict time optimal schedules ; associative operations ; tree height reduction ; pascal 's triangle
+high level synthesis ; state assignment ; sequential optimisation
+image matching ; perspective projection ; rigidity checking ; point correspondences ; structure from motion ; nonlinear parameter estimation
+depth estimation ; depth from defocus ; constant magnification defocusing ; active illumination pattern ; optical transfer function ; image sensing ; tuned focus operator ; real time range sensor
+image registration ; optical flow ; quadtrees ; splines ; motion analysis ; multiresolution analysis ; motion segmentation ; local parametric motion models ; image pyramids ; hierarchical basis functions
+petri nets ; reachability analysis ; ada tasking ; deadlock analysis ; net reduction ; concurrent software
+distributed algorithms ; distributed debugging ; predicate detection ; unstable predicates
+automatic test generation ; delay testing ; vlsi testing ; path delay faults ; timing defects ; nonrobust ; robust
+scaling ; stability radius ; linear matrix inequalities ; stochastic systems ; riccati inequalities ; dynamic output feedback ; multiperturbations ; state dependent noise
+collocation ; preconditioning ; boundary value problem
+information retrieval ; software reuse ; component repositories
+graph matching ; model matching ; graduated assignment ; continuation method ; weighted graphs ; attributed relational graphs ; softassign ; relaxation labeling
+descriptive complexity ; complexity classes ; first order projection ; reduction
+makespan ; stochastic scheduling ; in forest ; interval order ; out forest ; precedence constraint ; profile scheduling ; stochastic ordering ; uniform processors
+np completeness ; approximation algorithm ; chromatic number ; set cover ; bounded queries ; maximum clique
+self stabilization ; message passing ; shared memory ; token passing
+wormhole routing ; packet routing ; randomized routing ; greedy routing ; area universal networks ; fat tree interconnection network
+communication latency ; time division multiplexing ; fiber optical interconnects ; switching networks ; time slot interchangers
+fault tolerance ; mapping ; architecture ; error detection ; multicomputers ; fault tolerant algorithms
+load balancing ; trees ; hypercubes ; scheduling algorithms ; meshes ; distributed memory computers ; runtime parallel scheduling
+performance evaluation ; discrete event simulation ; parallel and distributed simulation ; virtual time ; time warp ; rollback ; checkpointing ; memory management
+self stabilization ; communication networks ; crash failures ; end to end protocols ; dynamic networks
+fault tolerance ; multiprocessor systems ; analysis of algorithms ; graph partitioning ; sequential diagnosis ; system level diagnosis ; degree of diagnosability
+two dimensional mesh ; adaptive wormhole routing ; positive first negative first algorithm ; region of adaptivity ; traffic distribution
+mobile computing ; energy consumption ; mobile communications ; error control ; wireless systems ; channel probing ; battery modeling
+performance evaluation ; mobile computing ; file systems ; wireless lan ; nfs ; link level retransmission
+routing ; dqdb ; isochronous channels ; path migration ; call setup
+supervisory control ; controllability ; discrete event systems ; observability ; co observability ; driven events ; nondeterministic automata ; partial observation ; prioritized synchronization ; trajectory models
+optimal control ; interior point methods ; stochastic programming ; nonlinear complementarity problem ; saddle point problem
+design automation ; vlsi design ; high level synthesis ; design methodology
+weighted least squares ; qr factorization ; interior point methods ; numerical stability ; equilibrium systems ; forward error analysis
