@@ -30,19 +30,15 @@ def calibrate_one2set(dataset, num_buckets=20, model2 = 'one2set_'):
     absent_bucket_confidence = np.array([0.0 for _ in range(num_buckets)])
     absent_bucket_acc = np.array([0 for _ in range(num_buckets)])
 
-    if dataset == 'semeval':
-        do_target_kp_stemming = False
-    else:
-        do_target_kp_stemming = True
+    separator_token = '<sep>'
 
     print('one2set predictions processing...')
 
     with tqdm(total=len(targets), leave=True) as pbar:
         for i, context in enumerate(context_lines):
 
-            present_preds, absent_preds = segregate_kps(predictions[i], context)
-
-            present_targets, absent_targets = segregate_kps(targets[i], context, do_kp_stemming= do_target_kp_stemming)
+            present_preds, absent_preds = segregate_kps_for_one2set(predictions[i], context)
+            present_targets, absent_targets = segregate_kps(targets[i], context)
 
             present_preds = remove_duplicates(present_preds)
             absent_preds = remove_duplicates(absent_preds)
@@ -51,49 +47,37 @@ def calibrate_one2set(dataset, num_buckets=20, model2 = 'one2set_'):
 
             kpp_inverse = 1
             kp_collect = []
-            print(len(prob_scores[i]))
-            print(len(predictions[i]))
-            #print(present_preds)
-            #print(present_targets)
-            #print(absent_preds)
-            #print(absent_targets)
-            #print()
+
+            for j, token in enumerate(predictions[i]):
+
+                if token != separator_token:
+                    kpp_inverse*=prob_scores[i][j]
+                    kp_collect.append(token)
 
 
-            for j, keyphrase in enumerate(predictions[i]):
-
-                kpp_inverse*=prob_scores[i][j]
-
-                len_kp_collect = len(keyphrase.split())
-                print(keyphrase, prob_scores[i][j])
-                bucket_pos = get_bucket(kpp_inverse ** (1 / len_kp_collect), num_buckets)
-                stemmed_kp_pred = stem_text(keyphrase)
-                #print(stemmed_kp_pred, bucket_pos)
-
-                if stemmed_kp_pred in present_preds:
-
-                    present_bucket_confidence[bucket_pos] += kpp_inverse ** (1 / len_kp_collect)
-                    present_bucket_samples[bucket_pos] += 1
-                    if stemmed_kp_pred in present_targets:
-                        present_bucket_acc[bucket_pos] += 1
                 else:
-                    absent_bucket_confidence[bucket_pos] += kpp_inverse ** (1 / len_kp_collect)
-                    absent_bucket_samples[bucket_pos] += 1
-                    if stemmed_kp_pred in absent_targets:
-                        absent_bucket_acc[bucket_pos] += 1
+                    if len(kp_collect)==0:
+                        continue
+                    bucket_pos = get_bucket(kpp_inverse ** (1 / len(kp_collect)), num_buckets)
+                    stemmed_kp_pred = stem_text(' '.join(kp_collect))#stem_text(keyphrase)
+                    #print(stemmed_kp_pred, bucket_pos)
+                    if stemmed_kp_pred in present_preds:
+
+                        present_bucket_confidence[bucket_pos] += kpp_inverse ** (1 / len(kp_collect))
+                        present_bucket_samples[bucket_pos] += 1
+                        if stemmed_kp_pred in present_targets:
+                            present_bucket_acc[bucket_pos] += 1
+                    else:
+                        absent_bucket_confidence[bucket_pos] += kpp_inverse ** (1 / len(kp_collect))
+                        absent_bucket_samples[bucket_pos] += 1
+                        if stemmed_kp_pred in absent_targets:
+                            absent_bucket_acc[bucket_pos] += 1
+
+                    kpp_inverse=1
+                    kp_collect=[]
 
             pbar.update(1)
-    '''
-        print(present_samples)
-        print(absent_samples)
-        print(present_bucket_samples)
-        print(absent_bucket_samples)
-        print(present_bucket_acc, np.sum(present_bucket_acc))
-        print(absent_bucket_acc, np.sum(absent_bucket_acc))
-        print((present_bucket_confidence + absent_bucket_confidence) / (present_bucket_samples + absent_bucket_samples))
-    
-        print((present_bucket_acc + absent_bucket_acc) / (present_bucket_samples + absent_bucket_samples))
-    '''
+
     ece, mce, tce = calculate_error(present_samples + absent_samples,
                                     present_bucket_samples + absent_bucket_samples,
                                     (present_bucket_confidence + absent_bucket_confidence) / (
@@ -514,7 +498,7 @@ def calibrate_all_datasets(model = 't5'):
 
 
 
-calibrate_all_datasets(model='one2seq')
+calibrate_all_datasets(model='one2set')
 #plot_reliability('calibrate_kpp_values', plot_name='Calibration_new', num_buckets=10, model1='t5', model2='bart')
 
 #calibrate_exhird('inspec', num_buckets=10)

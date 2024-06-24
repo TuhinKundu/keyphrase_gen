@@ -22,6 +22,25 @@ def make_consistent(kp1, kp2):
             kp1_split.append("dummy")
     return kp1_split, kp2_split
 
+def segregate_kps_for_one2set(tokens, context):
+    stemmed_context = stem_text(context)
+    present, absent = [], []
+    kp_collect= []
+    separator_token = '<sep>'
+    for i, token in enumerate(tokens):
+        if token == separator_token and len(kp_collect) >0:
+
+            kp = ' '.join(kp_collect)
+            kp = stem_text(kp)
+            if kp in stemmed_context:
+                present.append(kp)
+            else:
+                absent.append(kp)
+            kp_collect = []
+        else:
+            kp_collect.append(token)
+
+    return present, absent
 
 def segregate_kps(kps, context, do_kp_stemming=True):
     """
