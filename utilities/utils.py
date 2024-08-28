@@ -27,7 +27,8 @@ def clean_one2set(predictions, scores):
         clean_preds = []
         clean_scores = []
 
-        print(preds)
+        #print(preds)
+
         for i, tok in enumerate(preds):
             #print(i, tok)
             #print(predictions[i - 1])

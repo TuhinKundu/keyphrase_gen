@@ -785,7 +785,7 @@ def plot_reliability(json_name, plot_name, num_buckets=10, model1 = 'exhird', mo
     plt.show()
     plt.close()
 
-#plot_reliability('calibrate_kpp_values', plot_name='Calibration_5_models', num_buckets=10)
+plot_reliability('calibrate_kpp_values', plot_name='Calibration_5_models', num_buckets=10)
 
 def plot_relative_pos_graph(model1 = 'exhird_h_', model2='t5', model3='one2seq_', model4='bart', model5 = 'one2set_'):
     datasets =[ 'kp20k','krapivin', 'inspec','semeval']
@@ -851,4 +851,4 @@ def plot_relative_pos_graph(model1 = 'exhird_h_', model2='t5', model3='one2seq_'
     plt.show()
     plt.close()
 
-plot_relative_pos_graph()
+#plot_relative_pos_graph()

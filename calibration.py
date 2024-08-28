@@ -47,7 +47,7 @@ def calibrate_one2set(dataset, num_buckets=20, model2 = 'one2set_'):
 
             kpp_inverse = 1
             kp_collect = []
-
+            set_ = set()
             for j, token in enumerate(predictions[i]):
 
                 if token != separator_token:
@@ -59,19 +59,22 @@ def calibrate_one2set(dataset, num_buckets=20, model2 = 'one2set_'):
                     if len(kp_collect)==0:
                         continue
                     bucket_pos = get_bucket(kpp_inverse ** (1 / len(kp_collect)), num_buckets)
-                    stemmed_kp_pred = stem_text(' '.join(kp_collect))#stem_text(keyphrase)
+                    keyphrase= ' '.join(kp_collect)
+                    stemmed_kp_pred = stem_text(keyphrase)#stem_text(keyphrase)
                     #print(stemmed_kp_pred, bucket_pos)
-                    if stemmed_kp_pred in present_preds:
+                    if stemmed_kp_pred not in set_:
+                        set_.add(stemmed_kp_pred)
+                        if stemmed_kp_pred in present_preds:
 
-                        present_bucket_confidence[bucket_pos] += kpp_inverse ** (1 / len(kp_collect))
-                        present_bucket_samples[bucket_pos] += 1
-                        if stemmed_kp_pred in present_targets:
-                            present_bucket_acc[bucket_pos] += 1
-                    else:
-                        absent_bucket_confidence[bucket_pos] += kpp_inverse ** (1 / len(kp_collect))
-                        absent_bucket_samples[bucket_pos] += 1
-                        if stemmed_kp_pred in absent_targets:
-                            absent_bucket_acc[bucket_pos] += 1
+                            present_bucket_confidence[bucket_pos] += kpp_inverse ** (1 / len(kp_collect))
+                            present_bucket_samples[bucket_pos] += 1
+                            if stemmed_kp_pred in present_targets:
+                                present_bucket_acc[bucket_pos] += 1
+                        else:
+                            absent_bucket_confidence[bucket_pos] += kpp_inverse ** (1 / len(kp_collect))
+                            absent_bucket_samples[bucket_pos] += 1
+                            if stemmed_kp_pred in absent_targets:
+                                absent_bucket_acc[bucket_pos] += 1
 
                     kpp_inverse=1
                     kp_collect=[]
@@ -137,6 +140,7 @@ def calibrate_exhird(dataset, num_buckets=20):
             num_tokens = 0
             kp_type = ''
             collect_tokens= ''
+            set_ = set()
             for j, token in enumerate(raw_exhird_predictions[i]):
 
                 if '_start' in token:
@@ -153,17 +157,22 @@ def calibrate_exhird(dataset, num_buckets=20):
                 if token == ';':
                     if num_tokens > 0:
                         bucket_pos = get_bucket(kpp_inverse**(1/num_tokens), num_buckets)
+                        stem_collect_tokens = stem_text(collect_tokens)
                         if kp_type == 'present':
 
                             present_bucket_confidence[bucket_pos] += kpp_inverse**(1/num_tokens)
                             present_bucket_samples[bucket_pos] += 1
-                            if stem_text(collect_tokens) in stem_text(' '.join(present_targets)):
+
+                            if stem_collect_tokens in stem_text(' '.join(present_targets)) and stem_collect_tokens not in set_:
                                 present_bucket_acc[bucket_pos] += 1
+                                set_.add(stem_collect_tokens)
                         else:
                             absent_bucket_confidence[bucket_pos] += kpp_inverse**(1/num_tokens)
                             absent_bucket_samples[bucket_pos] += 1
-                            if stem_text(collect_tokens) in stem_text(' '.join(absent_targets)):
+
+                            if  stem_collect_tokens in stem_text(' '.join(absent_targets)) and stem_collect_tokens not in set_:
                                 absent_bucket_acc[bucket_pos] += 1
+                                set_.add(stem_collect_tokens)
 
                     continue
 
@@ -240,6 +249,9 @@ def calibrate_t5(dataset, num_buckets=10, tokenizer='t5-tokenizer/'):
         for i, preds in enumerate(t5_predictions):
             present_preds, absent_preds = segregate_kps(remove_duplicates(t5_predictions[i]), t5_context_lines[i])
             present_targets, absent_targets = segregate_kps(t5_targets[i], t5_context_lines[i])
+            #print(present_preds)
+            #print(absent_preds)
+            #print()
             present_samples += len(present_preds)
             absent_samples += len(absent_preds)
 
@@ -478,7 +490,7 @@ def calibrate_bart(dataset, num_buckets=10, model = 'facebook/bart-base'):
 
 
 def calibrate_all_datasets(model = 't5'):
-    datasets = [  'semeval']#, 'kp20k']
+    datasets = [ 'semeval', 'krapivin','inspec', 'kp20k']#, 'kp20k']
     dict = {}
     for dataset in datasets:
         print(dataset, model)
@@ -498,7 +510,7 @@ def calibrate_all_datasets(model = 't5'):
 
 
 
-calibrate_all_datasets(model='one2set')
+calibrate_all_datasets(model='exhird')
 #plot_reliability('calibrate_kpp_values', plot_name='Calibration_new', num_buckets=10, model1='t5', model2='bart')
 
 #calibrate_exhird('inspec', num_buckets=10)
