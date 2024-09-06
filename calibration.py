@@ -505,12 +505,14 @@ def calibrate_all_datasets(model = 't5'):
         else:
             dict[dataset] = calibrate_one2set(dataset, num_buckets=10, model2=model + '_').tolist()
     json_name = model+'_calibrate_kpp_values'
-    #with open('data_dump/'+json_name+'.json', 'w') as f:
-    #    json.dump(dict,f)
+    with open('data_dump/'+json_name+'.json', 'w') as f:
+        json.dump(dict,f)
 
 
+#for model in ['exhird', 't5', 'bart', 'bart', 'one2seq', 'one2set']:
+#    calibrate_all_datasets(model=model)
 
-calibrate_all_datasets(model='exhird')
+
 #plot_reliability('calibrate_kpp_values', plot_name='Calibration_new', num_buckets=10, model1='t5', model2='bart')
 
 #calibrate_exhird('inspec', num_buckets=10)

@@ -388,7 +388,7 @@ def get_relative_error_numbers(model, dataset):
             context_lines[i] = context_lines[i][0]
         targets[i], absent_targets = segregate_kps(targets[i], context_lines[i])
         stemmed_pred = [stem_text(kp) for kp in predictions[i]]
-
+        print(stemmed_pred)
 
 
         for j, keyphrase in enumerate(targets[i]):
@@ -941,59 +941,3 @@ def probab_exhird_boxplots(dataset):
     return p_bins, a_bins
     #make_boxplot(a_bins, model1 + dataset+'_absent', 'Token position', 'Absent Probability', model1 + dataset)
 #probab_exhird_boxplots('kp20k')
-
-from transformers import T5Tokenizer
-
-def probab_t5_boxplots(dataset):
-
-    model2 = 't5_'
-    ppl, t5_predictions, t5_context_lines, probabilites, token_predictions = json_load_dump(dataset, probab=True)
-    tokenizer = T5Tokenizer.from_pretrained('/home/tuhin/Desktop/NLP/T5_Keyphrase_Generation/embeddings/T5_base/')
-    sep_token_id = tokenizer.encode("<sep>", add_special_tokens=False)[0]
-    eos_token_id = tokenizer.eos_token_id
-
-    p_bins = [[] for i in range(5)]
-    a_bins = [[] for i in range(5)]
-
-    for i, pred in enumerate(token_predictions):
-        kp_token_collect = []
-        kp_probab_collect = []
-
-        for j, token_id in enumerate(pred[0]):
-            if j==0:
-                continue
-            if token_id == sep_token_id or token_id == eos_token_id:
-
-                if len(kp_probab_collect)>0:
-                    kp_pred = tokenizer.decode(kp_token_collect)
-                    if stem_text(kp_pred) in stem_text(t5_context_lines[i]):
-                        for k, bin in enumerate(kp_probab_collect[:5]):
-                            p_bins[k].append(kp_probab_collect[k])
-                    else:
-                        for k, bin in enumerate(kp_probab_collect[:5]):
-                            a_bins[k].append(kp_probab_collect[k])
-
-
-                    kp_token_collect = []
-                    kp_probab_collect = []
-                if token_id == eos_token_id:
-                    break
-            else:
-                kp_token_collect.append(token_id)
-                kp_probab_collect.append(probabilites[i][j])
-
-
-        if len(kp_probab_collect) > 0:
-            kp_pred = tokenizer.decode(kp_token_collect)
-            if stem_text(kp_pred) in stem_text(t5_context_lines[i]):
-                for k, bin in enumerate(kp_probab_collect[:5]):
-                    p_bins[k].append(kp_probab_collect[k])
-            else:
-                for k, bin in enumerate(kp_probab_collect[:5]):
-                    a_bins[k].append(kp_probab_collect[k])
-    exhird_bins = probab_exhird_boxplots(dataset)
-
-    make_sns_boxplot(exhird_bins, [p_bins, a_bins], 'final_boxplot_' + dataset + '_present_absent_', 'Token position', 'Probability', '')
-
-
-#probab_t5_boxplots('semeval')

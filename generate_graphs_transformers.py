@@ -836,6 +836,8 @@ def probab_t5_boxplots(dataset):
 
         num_kp = 0
 
+        kp_preds = set()
+
         for j, token_id in enumerate(pred[0]):
 
             if j==0:
@@ -847,8 +849,16 @@ def probab_t5_boxplots(dataset):
 
                     kp_pred = tokenizer.decode(kp_token_collect)
 
+                    stemmed_kp = stem_text(kp_pred)
 
-                    if stem_text(kp_pred) in stem_text(t5_context_lines[i]):
+                    if stemmed_kp in kp_preds:
+                        kp_token_collect, kp_probab_collect = [], []
+                        continue
+                    else:
+                        kp_preds.add(stemmed_kp)
+
+
+                    if stemmed_kp in stem_text(t5_context_lines[i]):
                         #new bin calculation at keyphrase level
                         p_bins[num_kp].append(sum(kp_probab_collect)/float(len(kp_probab_collect)))
 
@@ -874,7 +884,13 @@ def probab_t5_boxplots(dataset):
         if len(kp_probab_collect) > 0:
 
             kp_pred = tokenizer.decode(kp_token_collect)
-            if stem_text(kp_pred) in stem_text(t5_context_lines[i]):
+
+            stemmed_kp = stem_text(kp_pred)
+
+            if stemmed_kp in kp_preds:
+                continue
+
+            if stemmed_kp in stem_text(t5_context_lines[i]):
                 p_bins[num_kp].append(sum(kp_probab_collect)/float(len(kp_probab_collect)))
             else:
                 a_bins[num_kp].append((sum(kp_probab_collect))/float(len(kp_probab_collect)))
@@ -904,18 +920,24 @@ def probab_bart_boxplots(dataset):
 
         num_kp = 0
         #print(pred)
+
+        kp_preds = set()
         for j, token_id in enumerate(pred):
 
             if token_id == sep_token or token_id == eos_token:
-                #print(kp_probab_collect)
-                #print(kp_token_collect)
-                #print(num_kp)
+
                 if len(kp_probab_collect) > 0:
 
                     kp_pred = "".join(kp_token_collect).strip()
-                    #print(kp_pred)
+                    stemmed_kp = stem_text(kp_pred)
 
-                    if stem_text(kp_pred) in stem_text(t5_context_lines[i]):
+                    if stemmed_kp in kp_preds:
+                        kp_token_collect, kp_probab_collect = [], []
+                        continue
+                    else:
+                        kp_preds.add(stemmed_kp)
+
+                    if stemmed_kp in stem_text(t5_context_lines[i]):
                         # new bin calculation at keyphrase level
                         p_bins[num_kp].append(sum(kp_probab_collect) / float(len(kp_probab_collect)))
 
@@ -935,7 +957,12 @@ def probab_bart_boxplots(dataset):
         if len(kp_probab_collect) > 0:
 
             kp_pred = "".join(kp_token_collect).strip()
-            if stem_text(kp_pred) in stem_text(t5_context_lines[i]):
+            stemmed_kp = stem_text(kp_pred)
+
+            if stemmed_kp in kp_preds:
+                continue
+
+            if stemmed_kp in stem_text(t5_context_lines[i]):
                 p_bins[num_kp].append(sum(kp_probab_collect) / float(len(kp_probab_collect)))
 
             else:

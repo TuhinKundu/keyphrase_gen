@@ -665,10 +665,19 @@ def probab_transformer_boxplots(dataset, model = 'one2seq_'):
         stemmed_context = stem_text(context_lines[i])
         kp_collect = []
         prob_collect = []
+        kp_preds = set()
         for j, token in enumerate(pred):
             if token == "<sep>":
                 if len(kp_collect) > 0:
+
                     stemmed_kp = stem_text(' '.join(kp_collect))
+
+                    if stemmed_kp not in kp_preds:
+                        kp_preds.add(stemmed_kp)
+                    else:
+                        kp_collect, prob_collect = [], []
+                        continue
+
                     if stemmed_kp in stemmed_context:
                         for num, prob in enumerate(prob_collect[:5]):
                             p_bins[num].append(prob)
@@ -685,7 +694,12 @@ def probab_transformer_boxplots(dataset, model = 'one2seq_'):
                 prob_collect.append(scores[i][j])
         if len(kp_collect) > 0:
 
+
+
             stemmed_kp = stem_text(' '.join(kp_collect))
+            if stemmed_kp in kp_preds:
+                continue
+
             if stemmed_kp in stemmed_context:
                 for num, prob in enumerate(prob_collect[:5]):
                     p_bins[num].append(prob)
@@ -698,7 +712,7 @@ def probab_transformer_boxplots(dataset, model = 'one2seq_'):
     #                 'exhird_t5_bart_boxplot_' + dataset + '_present_absent_', 'Token position','Probability', '')
 
 
-#def probab_trans2set_boxplot(dataset):
+
 
 def box_plots(dataset):
     exhird_bins = probab_exhird_boxplots(dataset)
@@ -716,6 +730,7 @@ def box_plots(dataset):
 def line_plot_reliability(model,json_name, num_buckets, color, num, axes_name):
     with open('data_dump/'+model+'_'+json_name+'.json', 'r') as f:
         data = json.load(f)
+        #print(data)
     for i, dataset in enumerate(list(data.keys())):
         bucket_values = data[dataset]
 
@@ -785,7 +800,7 @@ def plot_reliability(json_name, plot_name, num_buckets=10, model1 = 'exhird', mo
     plt.show()
     plt.close()
 
-plot_reliability('calibrate_kpp_values', plot_name='Calibration_5_models', num_buckets=10)
+#plot_reliability('calibrate_kpp_values', plot_name='Calibration_5_models', num_buckets=10)
 
 def plot_relative_pos_graph(model1 = 'exhird_h_', model2='t5', model3='one2seq_', model4='bart', model5 = 'one2set_'):
     datasets =[ 'kp20k','krapivin', 'inspec','semeval']
