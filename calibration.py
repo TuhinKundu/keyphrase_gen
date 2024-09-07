@@ -12,6 +12,179 @@ from transformers import T5Tokenizer, BartTokenizer
 
 
 
+def calibrate_llama(dataset, num_buckets=10):
+    kp_predictions, probabilities, token_predictions, src, targets, all_kpp_values=load_llama(dataset)
+    prob_scores=probabilities
+    predictions=kp_predictions
+    context_lines=src
+    targets=targets
+    
+    present_samples = 0
+    present_bucket_samples = np.array([0 for _ in range(num_buckets)])
+    present_bucket_confidence = np.array([0.0 for _ in range(num_buckets)])
+    present_bucket_acc = np.array([0 for _ in range(num_buckets)])
+
+    absent_samples = 0
+    absent_bucket_samples = np.array([0 for _ in range(num_buckets)])
+    absent_bucket_confidence = np.array([0.0 for _ in range(num_buckets)])
+    absent_bucket_acc = np.array([0 for _ in range(num_buckets)])
+
+    if dataset == 'semeval':
+        do_target_kp_stemming = False
+    else:
+        do_target_kp_stemming = True
+
+    print('Llama predictions processing...')
+    with tqdm(total=len(targets), leave=True) as pbar:
+        for i, context in enumerate(context_lines):
+
+            present_preds, absent_preds = segregate_kps(predictions[i], context)
+
+            present_targets, absent_targets = segregate_kps(targets[i], context, do_kp_stemming= do_target_kp_stemming)
+            present_preds = remove_duplicates(present_preds)
+            absent_preds = remove_duplicates(absent_preds)
+            present_samples += len(present_preds)
+            absent_samples += len(absent_preds)
+
+            kpp_inverse = 1
+
+
+
+            for j, keyphrase in enumerate(predictions[i]):
+
+                kpp_inverse*=prob_scores[i][j]
+
+                len_kp_collect = len(keyphrase.split())
+                if len_kp_collect<=1:
+                    len_kp_collect=1
+                bucket_pos = get_bucket(kpp_inverse ** (1 / len_kp_collect), num_buckets)
+                stemmed_kp_pred = stem_text(keyphrase)
+                #print(stemmed_kp_pred, bucket_pos)
+
+                if stemmed_kp_pred in present_preds:
+
+                    present_bucket_confidence[bucket_pos] += kpp_inverse ** (1 / len_kp_collect)
+                    present_bucket_samples[bucket_pos] += 1
+                    if stemmed_kp_pred in present_targets:
+                        present_bucket_acc[bucket_pos] += 1
+                else:
+                    absent_bucket_confidence[bucket_pos] += kpp_inverse ** (1 / len_kp_collect)
+                    absent_bucket_samples[bucket_pos] += 1
+                    if stemmed_kp_pred in absent_targets:
+                        absent_bucket_acc[bucket_pos] += 1
+
+            pbar.update(1)
+
+    ece, mce, tce = calculate_error(present_samples + absent_samples,
+                                    present_bucket_samples + absent_bucket_samples,
+                                    (present_bucket_confidence + absent_bucket_confidence) / (
+                                                present_bucket_samples + absent_bucket_samples),
+                                    (present_bucket_acc + absent_bucket_acc) / (
+                                                present_bucket_samples + absent_bucket_samples))
+    print(ece)
+    present_ece, present_mce, present_tce = calculate_error(present_samples, present_bucket_samples,
+                                                            present_bucket_confidence / present_bucket_samples,
+                                                            present_bucket_acc / present_bucket_samples)
+    absent_ece, absent_mce, absent_tce = calculate_error(absent_samples, absent_bucket_samples,
+                                                         absent_bucket_confidence / absent_bucket_samples,
+                                                         absent_bucket_acc / absent_bucket_samples)
+    print(f'present_ece: {present_ece}')
+    print(f'absent_ece: {absent_ece}')
+
+    print((present_bucket_acc + absent_bucket_acc) / (present_bucket_samples + absent_bucket_samples))
+
+    return (present_bucket_acc + absent_bucket_acc) / (present_bucket_samples + absent_bucket_samples)
+
+
+#calibrate_llama("semeval")
+
+def calibrate_phi(dataset, num_buckets=10):
+    kp_predictions, probabilities, token_predictions, src, targets, all_kpp_values=load_phi(dataset)
+    prob_scores=probabilities
+    predictions=kp_predictions
+    context_lines=src
+    targets=targets
+    
+    present_samples = 0
+    present_bucket_samples = np.array([0 for _ in range(num_buckets)])
+    present_bucket_confidence = np.array([0.0 for _ in range(num_buckets)])
+    present_bucket_acc = np.array([0 for _ in range(num_buckets)])
+
+    absent_samples = 0
+    absent_bucket_samples = np.array([0 for _ in range(num_buckets)])
+    absent_bucket_confidence = np.array([0.0 for _ in range(num_buckets)])
+    absent_bucket_acc = np.array([0 for _ in range(num_buckets)])
+
+    if dataset == 'semeval':
+        do_target_kp_stemming = False
+    else:
+        do_target_kp_stemming = True
+
+    print('Phi predictions processing...')
+    with tqdm(total=len(targets), leave=True) as pbar:
+        for i, context in enumerate(context_lines):
+
+            present_preds, absent_preds = segregate_kps(predictions[i], context)
+
+            present_targets, absent_targets = segregate_kps(targets[i], context, do_kp_stemming= do_target_kp_stemming)
+
+            present_preds = remove_duplicates(present_preds)
+            absent_preds = remove_duplicates(absent_preds)
+            present_samples += len(present_preds)
+            absent_samples += len(absent_preds)
+
+            kpp_inverse = 1
+
+
+
+            for j, keyphrase in enumerate(predictions[i]):
+
+                kpp_inverse*=prob_scores[i][j]
+
+                len_kp_collect = len(keyphrase.split())
+                if len_kp_collect<=1:
+                    len_kp_collect=1
+                bucket_pos = get_bucket(kpp_inverse ** (1 / len_kp_collect), num_buckets)
+                stemmed_kp_pred = stem_text(keyphrase)
+                #print(stemmed_kp_pred, bucket_pos)
+
+                if stemmed_kp_pred in present_preds:
+
+                    present_bucket_confidence[bucket_pos] += kpp_inverse ** (1 / len_kp_collect)
+                    present_bucket_samples[bucket_pos] += 1
+                    if stemmed_kp_pred in present_targets:
+                        present_bucket_acc[bucket_pos] += 1
+                else:
+                    absent_bucket_confidence[bucket_pos] += kpp_inverse ** (1 / len_kp_collect)
+                    absent_bucket_samples[bucket_pos] += 1
+                    if stemmed_kp_pred in absent_targets:
+                        absent_bucket_acc[bucket_pos] += 1
+
+            pbar.update(1)
+
+    ece, mce, tce = calculate_error(present_samples + absent_samples,
+                                    present_bucket_samples + absent_bucket_samples,
+                                    (present_bucket_confidence + absent_bucket_confidence) / (
+                                                present_bucket_samples + absent_bucket_samples),
+                                    (present_bucket_acc + absent_bucket_acc) / (
+                                                present_bucket_samples + absent_bucket_samples))
+    print(ece)
+    present_ece, present_mce, present_tce = calculate_error(present_samples, present_bucket_samples,
+                                                            present_bucket_confidence / present_bucket_samples,
+                                                            present_bucket_acc / present_bucket_samples)
+    absent_ece, absent_mce, absent_tce = calculate_error(absent_samples, absent_bucket_samples,
+                                                         absent_bucket_confidence / absent_bucket_samples,
+                                                         absent_bucket_acc / absent_bucket_samples)
+    print(f'present_ece: {present_ece}')
+    print(f'absent_ece: {absent_ece}')
+
+    print((present_bucket_acc + absent_bucket_acc) / (present_bucket_samples + absent_bucket_samples))
+
+    return (present_bucket_acc + absent_bucket_acc) / (present_bucket_samples + absent_bucket_samples)
+
+
+
+
 def calibrate_one2set(dataset, num_buckets=20, model2 = 'one2set_'):
 
     prob_scores, predictions, context_lines = json_load_one2set(model2, dataset.lower())
@@ -513,7 +686,7 @@ def calibrate_all_datasets(model = 't5'):
 #    calibrate_all_datasets(model=model)
 
 
-#plot_reliability('calibrate_kpp_values', plot_name='Calibration_new', num_buckets=10, model1='t5', model2='bart')
+plot_reliability('calibrate_kpp_values', plot_name='Calibration_new', num_buckets=10, model1='t5', model2='bart')
 
 #calibrate_exhird('inspec', num_buckets=10)
 #calibrate_t5('inspec', num_buckets=10)

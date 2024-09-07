@@ -1,0 +1,122 @@
+/usr/bin/python3.7 /home/tuhin/Desktop/NLP/ExHiRD-DKG/fuzzy_matching.py
+  0%|          | 0/400 [00:00<?, ?it/s]/home/tuhin/.local/lib/python3.7/site-packages/transformers/tokenization_utils_base.py:1423: FutureWarning: The `max_len` attribute has been deprecated and will be removed in a future version, use `model_max_length` instead.
+  FutureWarning,
+100%|██████████| 400/400 [01:01<00:00,  6.48it/s]
+
+one2seq microsoft/deberta-large-mnli krapivin updated scores
+Bert score present : 0.4020047066937378
+Bert score absent : 0.07022926942400272
+
+TER score present : 0.39572917297293947
+TER score absent : 0.07676859891914067
+
+100%|██████████| 500/500 [01:25<00:00,  5.85it/s]
+
+one2seq microsoft/deberta-large-mnli inspec updated scores
+Bert score present : 0.403602352275882
+Bert score absent : 0.04415140721232111
+
+TER score present : 0.39522549402960216
+TER score absent : 0.04264707070707071
+
+100%|██████████| 100/100 [00:19<00:00,  5.20it/s]
+
+one2seq microsoft/deberta-large-mnli semeval updated scores
+Bert score present : 0.37020243596158975
+Bert score absent : 0.04287746110008271
+
+TER score present : 0.3694458820595469
+TER score absent : 0.04951482930554138
+
+100%|██████████| 400/400 [00:40<00:00,  9.90it/s]
+
+one2seq roberta-large krapivin updated scores
+Bert score present : 0.4444530936278699
+Bert score absent : 0.11759218876107078
+
+TER score present : 0.39572917297293947
+TER score absent : 0.07676859891914067
+
+100%|██████████| 500/500 [01:05<00:00,  7.63it/s]
+
+one2seq roberta-large inspec updated scores
+Bert score present : 0.4498237843310614
+Bert score absent : 0.057028544504297195
+
+TER score present : 0.39522549402960216
+TER score absent : 0.04264707070707071
+
+100%|██████████| 100/100 [00:15<00:00,  6.58it/s]
+
+one2seq roberta-large semeval updated scores
+Bert score present : 0.4671276307259241
+Bert score absent : 0.09322267059960558
+
+TER score present : 0.3694458820595469
+TER score absent : 0.04951482930554138
+
+100%|██████████| 400/400 [00:25<00:00, 15.54it/s]
+
+one2seq scibert-scivocab-uncased krapivin updated scores
+Bert score present : 0.5083893718530684
+Bert score absent : 0.14641414677251807
+
+TER score present : 0.39572917297293947
+TER score absent : 0.07676859891914067
+
+100%|██████████| 500/500 [00:35<00:00, 13.97it/s]
+
+one2seq scibert-scivocab-uncased inspec updated scores
+Bert score present : 0.5215663815609006
+Bert score absent : 0.1029876296428095
+
+TER score present : 0.39522549402960216
+TER score absent : 0.04264707070707071
+
+100%|██████████| 100/100 [00:09<00:00, 10.40it/s]
+
+one2seq scibert-scivocab-uncased semeval updated scores
+Bert score present : 0.5003261224079693
+Bert score absent : 0.11979325451449829
+
+TER score present : 0.3694458820595469
+TER score absent : 0.04951482930554138
+
+
+Process finished with exit code 0
+
+
+
+/usr/bin/python3.7 /home/tuhin/Desktop/NLP/ExHiRD-DKG/fuzzy_matching.py
+  0%|          | 0/20000 [00:00<?, ?it/s]/home/tuhin/.local/lib/python3.7/site-packages/transformers/tokenization_utils_base.py:1423: FutureWarning: The `max_len` attribute has been deprecated and will be removed in a future version, use `model_max_length` instead.
+  FutureWarning,
+100%|██████████| 20000/20000 [56:48<00:00,  5.87it/s]
+
+one2seq microsoft/deberta-large-mnli kp20k updated scores
+Bert score present : 0.4188878056945232
+Bert score absent : 0.06782355663667218
+
+TER score present : 0.4061321307294848
+TER score absent : 0.06860993346623899
+
+100%|██████████| 20000/20000 [33:54<00:00,  9.83it/s]
+
+one2seq roberta-large kp20k updated scores
+Bert score present : 0.45447858555952253
+Bert score absent : 0.08573898860871763
+
+TER score present : 0.4061321307294848
+TER score absent : 0.06860993346623899
+
+100%|██████████| 20000/20000 [20:37<00:00, 16.16it/s]
+
+one2seq scibert-scivocab-uncased kp20k updated scores
+Bert score present : 0.5129256613541303
+Bert score absent : 0.11872082083506946
+
+TER score present : 0.4061321307294848
+TER score absent : 0.06860993346623899
+
+
+Process finished with exit code 0
+

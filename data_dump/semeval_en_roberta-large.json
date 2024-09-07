@@ -1,0 +1,1 @@
+{"model_type": "roberta-large", "lang": "en", "bert_exhird_present": 0.23237241091697097, "bert_exhird_absent": 0.028178671379324, "bert_t5_present": 0.2621923874777835, "bert_t5_absent": 0.02663630612965015}

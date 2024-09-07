@@ -3,6 +3,32 @@ import tqdm
 import pandas as pd
 from utilities.post_process_utils import *
 
+def load_llama(dataset):
+    with open('graph_outputs/'+dataset+'_llama3_kpp_test.json') as file:
+        json_data = json.load(file)
+
+    kp_predictions = json_data['dup_removed_kp_predictions']
+    probabilities = json_data['probabilities']
+    token_predictions = json_data['dup_removed_token_predictions']
+    src = json_data['src']
+    targets = json_data['targets']
+    all_kpp_values = json_data['dup_removed_kpp']
+
+    return kp_predictions, probabilities, token_predictions, src, targets, all_kpp_values
+
+def load_phi(dataset):
+    with open('graph_outputs/'+dataset+'phi3_kpp_test.json') as file:
+        json_data = json.load(file)
+
+    kp_predictions = json_data['dup_removed_kp_predictions']
+    probabilities = json_data['probabilities']
+    token_predictions = json_data['dup_removed_token_predictions']
+    src = json_data['src']
+    targets = json_data['targets']
+    all_kpp_values = json_data['dup_removed_kpp']
+
+    return kp_predictions, probabilities, token_predictions, src, targets, all_kpp_values
+
 def json_load_dump(dataset, probab = False, seed=1):
     with open('data_dump/seed'+str(seed)+'/' + dataset + '_data.json', 'r') as f:
         dic = json.load(f)

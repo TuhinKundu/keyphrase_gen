@@ -1,0 +1,1 @@
+{"model_type": "microsoft/deberta-large-mnli", "lang": "en", "bert_exhird_present": 0.369648801523945, "bert_exhird_absent": 0.1490939335125012, "bert_t5_present": 0.3726823190735733, "bert_t5_absent": 0.1337385931186623}
