@@ -17,7 +17,7 @@ def load_llama(dataset):
     return kp_predictions, probabilities, token_predictions, src, targets, all_kpp_values
 
 def load_phi(dataset):
-    with open('graph_outputs/'+dataset+'phi3_kpp_test.json') as file:
+    with open('graph_outputs/'+dataset+'_phi3_kpp_test.json') as file:
         json_data = json.load(file)
 
     kp_predictions = json_data['dup_removed_kp_predictions']
@@ -29,6 +29,34 @@ def load_phi(dataset):
 
     return kp_predictions, probabilities, token_predictions, src, targets, all_kpp_values
 
+##################################################################################################################################################################
+def load_llama_for_boxplots(dataset):
+    with open('graph_outputs/'+dataset+'_llama3_kpp_test.json') as file:
+        json_data = json.load(file)
+
+    kp_predictions = json_data['kp_predictions_raw']
+    probabilities = json_data['probabilities']
+    token_predictions = json_data['token_predictions_raw']
+    src = json_data['src']
+    targets = json_data['targets']
+    all_kpp_values = json_data['kpp_raw']
+
+    return kp_predictions, probabilities, token_predictions, src, targets, all_kpp_values
+
+def load_phi_for_boxplots(dataset):
+    with open('graph_outputs/'+dataset+'_phi3_kpp_test.json') as file:
+        json_data = json.load(file)
+
+    kp_predictions = json_data['kp_predictions_raw']
+    probabilities = json_data['probabilities']
+    token_predictions = json_data['token_predictions_raw']
+    src = json_data['src']
+    targets = json_data['targets']
+    all_kpp_values = json_data['kpp_raw']
+
+    return kp_predictions, probabilities, token_predictions, src, targets, all_kpp_values
+##################################################################################################################################################################
+
 def json_load_dump(dataset, probab = False, seed=1):
     with open('data_dump/seed'+str(seed)+'/' + dataset + '_data.json', 'r') as f:
         dic = json.load(f)
@@ -38,7 +66,6 @@ def json_load_dump(dataset, probab = False, seed=1):
     kp_predictions = dic['predictions']
     probabilities = dic['probabilities']
     predicted_tokens = dic['token_predictions']
-
     context_lines = dic['src']
 
 
@@ -57,7 +84,7 @@ def json_load_dump(dataset, probab = False, seed=1):
     else:
         return ppl, kp_predictions, context_lines
 
-
+ 
 def get_t5_targets(dataset):
 
     path = 'processed_data/KG_test_'+dataset+'.jsonl'
@@ -150,10 +177,10 @@ def json_load_one2seq(model, dataset):
 
     scores = dic['scores']
     predictions = dic['predictions']
-    #entropies = dic['entropies']
+    entropies = dic['entropies']
     context_lines = dic['context_lines']
 
-    return scores, predictions,  context_lines
+    return scores, predictions,entropies,context_lines
 
 
 def plot_histogram_transformers():
@@ -748,15 +775,15 @@ def probab_exhird_boxplots(dataset):
     model1 = 'exhird_h_'
     scores, predictions, entropies = json_load(model1, dataset)
 
-    #make_boxplot(relative_ppl1, model1 + dataset, 'Relative pos', 'Perplexity', model1 + dataset)
     p_bins = [[] for i in range(5)]
     a_bins = [[] for i in range(5)]
     kp_len = 0
     kp_type = ''
 
     for i, pred in enumerate(predictions):
-        for j, token in enumerate(pred):
 
+        for j, token in enumerate(pred):
+            print(pred)
             if token == '<p_start>':
                 kp_type = 'present'
 
@@ -766,26 +793,18 @@ def probab_exhird_boxplots(dataset):
             elif token == ';':
                 kp_len=0
             else:
-                #if kp_len==4:
-                #    print(4)
                 if kp_type == 'present':
 
                     if kp_len<5:
                         p_bins[kp_len].append(scores[i][j])
-                    #else:
-                    #    p_bins[-1].append(scores[i][j])
                 else:
                     if kp_len<5:
                         a_bins[kp_len].append(scores[i][j])
-                    #else:
-                    #    a_bins[-1].append(scores[i][j])
                 kp_len+=1
 
-    #make_sns_boxplot(p_bins, a_bins, model1 + dataset +'_present_absent_', 'Token position', 'Probability', '')
-    #print('Generated plots')
+    print(a_bins)
     return p_bins, a_bins
-    #make_boxplot(a_bins, model1 + dataset+'_absent', 'Token position', 'Absent Probability', model1 + dataset)
-#probab_exhird_boxplots('kp20k')
+#probab_exhird_boxplots('semeval')
 
 
 
@@ -829,11 +848,10 @@ def probab_one2seq_boxplots(dataset):
             else:
                 for num, prob in enumerate(prob_collect[:5]):
                     a_bins[num].append(prob)
-
+    
     exhird_bins= probab_exhird_boxplots(dataset)
     make_sns_boxplot(exhird_bins, [p_bins, a_bins], 'exhird_one2seq_boxplot_' + dataset + '_present_absent_', 'Token position',
                      'Probability', '', model2='One2Seq')
-
 
 #probab_one2seq_boxplots('semeval')
 
@@ -999,3 +1017,150 @@ def probab_bart_boxplots(dataset):
     # make_sns_boxplot(exhird_bins, [p_bins, a_bins], 'final_boxplot_' + dataset + '_present_absent_', 'Token position', 'Probability', '')
     print(p_bins)
     return [p_bins, a_bins]
+
+def add_sep_and_kpp(token_predictions, all_kpp_values):
+    new_token_list = []
+    new_kpp_list = []
+
+    for tokens, kpp_values in zip(token_predictions, all_kpp_values):
+        merged_tokens = []
+        merged_kpp = []
+        kpp_index = 0
+
+        for i, sublist in enumerate(tokens):
+            merged_tokens.extend(sublist)
+            merged_kpp.extend(kpp_values[kpp_index:kpp_index + len(sublist)])
+            kpp_index += len(sublist)
+
+            if i < len(tokens) - 1:
+                merged_tokens.append('<sep>')
+                merged_kpp.append(0)  # Add corresponding 0 for <sep>
+
+        new_token_list.append(merged_tokens)
+        new_kpp_list.append(merged_kpp)
+
+    return new_token_list, new_kpp_list
+
+
+
+def process_predictions(predictions, beam=False):
+    stemmer = PorterStemmer()
+
+    processed_predictions = []
+    for beam_prediction in predictions:
+        if beam:
+            prediction_ = ""
+            for prediction in beam_prediction:
+                prediction = prediction.replace(";", "<sep>")
+                prediction = prediction.split("<eos>")[0]
+                if not prediction_:
+                    prediction_ += prediction
+                else:
+                    prediction_ += ' <sep> ' + prediction
+            prediction = prediction_
+        else:
+            beam_prediction = beam_prediction.replace(";", "<sep>")
+            prediction = beam_prediction.split("<eos>")[0]
+
+        prediction = prediction.split(",")
+
+        stemed_prediction = []
+        for kp in prediction:
+            kp = kp.lower().strip()
+            if kp != "" and kp != "<peos>" and kp!="," and kp != "." and kp != "<unk>":  # and "." not in kp and "," not in kp
+                tokenized_kp = kp.split(" ")  # nltk.word_tokenize(kp)
+                tokenized_stemed_kp = [stemmer.stem(kw).strip() for kw in tokenized_kp]
+                stemed_kp = " ".join(tokenized_stemed_kp).replace("< digit >", "<digit>")
+                if stemed_kp.strip() != "":
+                    stemed_prediction.append(stemed_kp.strip())
+
+        # make prediction duplicates free but preserve order for @topk
+
+        prediction_dict = {}
+        stemed_prediction_ = []
+        for kp in stemed_prediction:
+            if kp not in prediction_dict:
+                prediction_dict[kp] = 1
+                stemed_prediction_.append(kp)
+        stemed_prediction = stemed_prediction_
+
+        processed_predictions.extend(stemed_prediction)
+
+    return processed_predictions
+
+def process_srcs(srcs):
+    stemmer = PorterStemmer()
+    processed_srcs = []
+    tokenized_src = srcs.split()  # Split the string into words
+    tokenized_stemed_src = [stemmer.stem(token.strip().lower()).strip() for token in tokenized_src]
+    stemed_src = " ".join(tokenized_stemed_src).strip()
+    processed_srcs.append(stemed_src)
+    return processed_srcs
+
+def probab_llama_boxplots(dataset): #taken from line 811 one2seq code and adapted for llama
+
+    kp_predictions, probabilities, token_predictions, src, targets, all_kpp_values=load_llama(dataset)
+    context_lines=src
+    token_predictions,scores=add_sep_and_kpp(token_predictions, probabilities)
+    
+    predictions=[]
+    srcs=[]
+    
+    for i in range(len(src)):
+        temp_predictions = process_predictions(token_predictions[i])
+        #temp_srcs = process_srcs(src[i])
+        predictions.append(temp_predictions)
+        #srcs.append(temp_srcs)
+        
+        
+    p_bins = [[] for i in range(5)]
+    a_bins = [[] for i in range(5)]
+
+
+    for i, pred in enumerate(predictions):
+        stemmed_context = stem_text(context_lines[i])
+        kp_collect = []
+        prob_collect = []
+        kp_preds = set()
+        for j, token in enumerate(pred):
+            if token == "<sep>":
+                if len(kp_collect) > 0:
+
+                    stemmed_kp = stem_text(' '.join(kp_collect))
+
+                    if stemmed_kp not in kp_preds:
+                        kp_preds.add(stemmed_kp)
+                    else:
+                        kp_collect, prob_collect = [], []
+                        continue
+
+                    if stemmed_kp in stemmed_context:
+                        for num, prob in enumerate(prob_collect[:5]):
+                            p_bins[num].append(prob)
+                    else:
+                        for num, prob in enumerate(prob_collect[:5]):
+                            a_bins[num].append(prob)
+
+                    kp_collect, prob_collect = [], []
+            else:
+                if len(pred) != len(scores[i]):
+                    #print(kp_collect, len(pred))
+                    break
+                kp_collect.append(token)
+                prob_collect.append(scores[i][j])
+        if len(kp_collect) > 0:
+
+
+
+            stemmed_kp = stem_text(' '.join(kp_collect))
+            if stemmed_kp in kp_preds:
+                continue
+
+            if stemmed_kp in stemmed_context:
+                for num, prob in enumerate(prob_collect[:5]):
+                    p_bins[num].append(prob)
+            else:
+                for num, prob in enumerate(prob_collect[:5]):
+                    a_bins[num].append(prob)
+    return [p_bins, a_bins]
+probab_llama_boxplots("semeval")

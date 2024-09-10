@@ -464,180 +464,62 @@ def test_both(dataset='inspec'):
 
 #test_both()
 
+def plot_bins(ax, p_bins, a_bins, color, title, show_ylabels, show_legend=True):
+    dic = {
+        'probability': [],
+        'legend': [],
+        'token_pos': []
+    }
+    
+    for i, bin in enumerate(p_bins):
+        for probability in bin:
+            dic['probability'].append(probability)
+            dic['legend'].append('present')
+            dic['token_pos'].append(i + 1)
+
+    for i, bin in enumerate(a_bins):
+        for probability in bin:
+            dic['probability'].append(probability)
+            dic['legend'].append('absent')
+            dic['token_pos'].append(i + 1)
+    
+    df = pd.DataFrame(data=dic)
+    sns.boxplot(x="token_pos", y="probability", hue="legend", data=df, ax=ax, showfliers=False,
+                palette=[color[1], color[2]]).set(xlabel=None, ylabel=None, title=title)
+    
+    if not show_ylabels:
+        ax.set(yticklabels=[])
+    
+    if show_legend:
+        # Position the legend at the bottom-right
+        ax.legend(bbox_to_anchor=(8, -0.25), ncol=2, frameon=False)
+    else:
+        ax.legend([], [], frameon=False)
+        
+    ax.set_ylim(0, 1.1)
+
 def make_sns_boxplot(exhird_bins, one2_seq_bins, one2set_bins, t5_bins, bart_bins, llama_bins, phi_bins, filename, xlabel, ylabel, title, model1='ExHiRD', model2='T5', model3='One2Seq'):
     sns.set_theme(style="whitegrid", font_scale=1.3)
-
     color = sns.color_palette("pastel")
-    j = 1
-    fig = plt.figure(figsize=[15, 5])
-
-    fig.text(0.001, 0.5, 'Probability', va='center', rotation='vertical', fontsize=16)
-    fig.text(0.45, 0.01, 'Token position', va='center', fontsize=16)
-    axes1 = plt.subplot(1, 7, 1)
-    dic = {
-        'probability' : [],
-        'legend' : [],
-        'token_pos' : []
-    }
-    p_bins, a_bins = exhird_bins
-    for i, bin in enumerate(p_bins):
-        for j, probability in enumerate(bin):
-            dic['probability'].append(probability)
-            dic['legend'].append('present')
-            dic['token_pos'].append(i+1)
-
-    for i, bin in enumerate(a_bins):
-        for j, probability in enumerate(bin):
-            dic['probability'].append(probability)
-            dic['legend'].append('absent')
-            dic['token_pos'].append(i+1)
-    df= pd.DataFrame(data=dic)
-    axes1 = sns.boxplot(x="token_pos", y="probability", hue="legend", data=df, showfliers= False,
-                        palette=[color[1], color[2]]).set(xlabel=None, ylabel=None, title=model1)
-    plt.legend(frameon=False, prop={'size': 10}, loc=(0.003,0.91), ncol=2)
-    plt.ylim(bottom=0, top=1.1)
-    dic = {
-        'probability': [],
-        'legend': [],
-        'token_pos': []
-    }
-
-    p_bins, a_bins = one2_seq_bins
-    axes2 = plt.subplot(1, 7, 2)
-    axes2.set(yticklabels=[])
-    for i, bin in enumerate(p_bins):
-        for j, probability in enumerate(bin):
-            dic['probability'].append(probability)
-            dic['legend'].append('present')
-            dic['token_pos'].append(i + 1)
-
-    for i, bin in enumerate(a_bins):
-        for j, probability in enumerate(bin):
-            dic['probability'].append(probability)
-            dic['legend'].append('absent')
-            dic['token_pos'].append(i + 1)
-    df = pd.DataFrame(data=dic)
-
-    axes2 = sns.boxplot(x="token_pos", y="probability", hue="legend", data=df, showfliers=False,
-                        palette=[color[1], color[2]]).set(xlabel=None, ylabel=None, title='Transformer', yticklabels=[])
-
-    #axes1.legend(frameon=False, prop={'size': 9}, loc='upper left')
-    #plt.xticks([i + 1 for i in np.arange(len(data))])
-    plt.legend([], [], frameon=False)
-
-    plt.ylim(bottom=0, top = 1.1)
-
-    dic = {
-        'probability': [],
-        'legend': [],
-        'token_pos': []
-    }
-    p_bins, a_bins = one2set_bins
-    axes3 = plt.subplot(1, 7, 3)
-    axes3.set(yticklabels=[])
-    for i, bin in enumerate(p_bins):
-        for j, probability in enumerate(bin):
-            dic['probability'].append(probability)
-            dic['legend'].append('present')
-            dic['token_pos'].append(i + 1)
-
-    for i, bin in enumerate(a_bins):
-        for j, probability in enumerate(bin):
-            dic['probability'].append(probability)
-            dic['legend'].append('absent')
-            dic['token_pos'].append(i + 1)
-    df = pd.DataFrame(data=dic)
-    axes3 = sns.boxplot(x="token_pos", y="probability", hue="legend", data=df, showfliers=False,
-                        palette=[color[1], color[2]]).set(xlabel=None, ylabel=None, title='Trans2Set')
-    plt.legend([], [], frameon=False)
-
-    p_bins, a_bins = t5_bins
-    axes3 = plt.subplot(1, 7, 4)
-    axes3.set(yticklabels=[])
-    for i, bin in enumerate(p_bins):
-        for j, probability in enumerate(bin):
-            dic['probability'].append(probability)
-            dic['legend'].append('present')
-            dic['token_pos'].append(i + 1)
-
-    for i, bin in enumerate(a_bins):
-        for j, probability in enumerate(bin):
-            dic['probability'].append(probability)
-            dic['legend'].append('absent')
-            dic['token_pos'].append(i + 1)
-    df = pd.DataFrame(data=dic)
-    axes3 = sns.boxplot(x="token_pos", y="probability", hue="legend", data=df, showfliers=False,
-                        palette=[color[1], color[2]]).set(xlabel=None, ylabel=None, title='T5')
-    plt.legend([], [], frameon=False)
-
-    p_bins, a_bins = bart_bins
-    axes3 = plt.subplot(1, 7, 5)
-    axes3.set(yticklabels=[])
-    for i, bin in enumerate(p_bins):
-        for j, probability in enumerate(bin):
-            dic['probability'].append(probability)
-            dic['legend'].append('present')
-            dic['token_pos'].append(i + 1)
-
-    for i, bin in enumerate(a_bins):
-        for j, probability in enumerate(bin):
-            dic['probability'].append(probability)
-            dic['legend'].append('absent')
-            dic['token_pos'].append(i + 1)
-    df = pd.DataFrame(data=dic)
-    axes3 = sns.boxplot(x="token_pos", y="probability", hue="legend", data=df, showfliers=False,
-                        palette=[color[1], color[2]]).set(xlabel=None, ylabel=None, title='Bart')
     
+    fig, axes = plt.subplots(1, 7, figsize=[20, 5])
+    plt.subplots_adjust(bottom=0.24, left=0.06)
+    fig.text(0.001, 0.5, ylabel, va='center', rotation='vertical', fontsize=16)
+    fig.text(0.45, 0.01, xlabel, va='center', fontsize=16)
     
-    
-    p_bins, a_bins = llama_bins
-    axes3 = plt.subplot(1, 7, 6)
-    axes3.set(yticklabels=[])
-    for i, bin in enumerate(p_bins):
-        for j, probability in enumerate(bin):
-            dic['probability'].append(probability)
-            dic['legend'].append('present')
-            dic['token_pos'].append(i + 1)
+    # Plot each model's bins, showing legend only for the first plot
+    plot_bins(axes[0], *exhird_bins, color, model1, show_ylabels=True, show_legend=True)
+    plot_bins(axes[1], *one2_seq_bins, color, 'Transformer', show_ylabels=False, show_legend=False)
+    plot_bins(axes[2], *one2set_bins, color, 'Trans2Set', show_ylabels=False, show_legend=False)
+    plot_bins(axes[3], *t5_bins, color, 'T5', show_ylabels=False, show_legend=False)
+    plot_bins(axes[4], *bart_bins, color, 'Bart', show_ylabels=False, show_legend=False)
+    plot_bins(axes[5], *llama_bins, color, 'Llama 3', show_ylabels=False, show_legend=False)
+    plot_bins(axes[6], *phi_bins, color, 'Phi 3', show_ylabels=False, show_legend=False)
 
-    for i, bin in enumerate(a_bins):
-        for j, probability in enumerate(bin):
-            dic['probability'].append(probability)
-            dic['legend'].append('absent')
-            dic['token_pos'].append(i + 1)
-    df = pd.DataFrame(data=dic)
-    axes3 = sns.boxplot(x="token_pos", y="probability", hue="legend", data=df, showfliers=False,
-                        palette=[color[1], color[2]]).set(xlabel=None, ylabel=None, title='Llama3')
-    
-    p_bins, a_bins = phi_bins
-    axes3 = plt.subplot(1, 7, 7)
-    axes3.set(yticklabels=[])
-    for i, bin in enumerate(p_bins):
-        for j, probability in enumerate(bin):
-            dic['probability'].append(probability)
-            dic['legend'].append('present')
-            dic['token_pos'].append(i + 1)
-
-    for i, bin in enumerate(a_bins):
-        for j, probability in enumerate(bin):
-            dic['probability'].append(probability)
-            dic['legend'].append('absent')
-            dic['token_pos'].append(i + 1)
-    df = pd.DataFrame(data=dic)
-    axes3 = sns.boxplot(x="token_pos", y="probability", hue="legend", data=df, showfliers=False,
-                        palette=[color[1], color[2]]).set(xlabel=None, ylabel=None, title='Phi3')
-
-    # axes1.legend(frameon=False, prop={'size': 9}, loc='upper left')
-    # plt.xticks([i + 1 for i in np.arange(len(data))])
-    plt.legend([], [], frameon=False)
-
-    plt.ylim(bottom=0, top=1.1)
-    #plt.xlabel(xlabel)
-    #plt.ylabel(ylabel)
-    #plt.title(title)
-    #ax.legend(loc='upper left')
     plt.tight_layout()
-    plt.savefig('graphs/'+filename + '.png', bbox_inches = 'tight', pad_inches = 0.02)
+    plt.savefig('graphs/' + filename + '.png', bbox_inches='tight', pad_inches=0.15)
     plt.clf()
+
 
 
 
@@ -746,10 +628,218 @@ def probab_transformer_boxplots(dataset, model = 'one2seq_'):
                     a_bins[num].append(prob)
 
     return [p_bins, a_bins]
-    #make_sns_boxplot(exhird_bins, t5_bins, bart_bins,
-    #                 'exhird_t5_bart_boxplot_' + dataset + '_present_absent_', 'Token position','Probability', '')
+
+def process_predictions(predictions, beam=False):
+    stemmer = PorterStemmer()
+
+    processed_predictions = []
+    for beam_prediction in predictions:
+        if beam:
+            prediction_ = ""
+            for prediction in beam_prediction:
+                prediction = prediction.replace(";", "<sep>")
+                prediction = prediction.split("<eos>")[0]
+                if not prediction_:
+                    prediction_ += prediction
+                else:
+                    prediction_ += ' <sep> ' + prediction
+            prediction = prediction_
+        else:
+            beam_prediction = beam_prediction.replace(";", "<sep>")
+            prediction = beam_prediction.split("<eos>")[0]
+
+        prediction = prediction.split(",")
+
+        stemed_prediction = []
+        for kp in prediction:
+            kp = kp.lower().strip()
+            if kp != "" and kp != "<peos>" and kp!="," and kp != "." and kp != "<unk>":  # and "." not in kp and "," not in kp
+                tokenized_kp = kp.split(" ")  # nltk.word_tokenize(kp)
+                tokenized_stemed_kp = [stemmer.stem(kw).strip() for kw in tokenized_kp]
+                stemed_kp = " ".join(tokenized_stemed_kp).replace("< digit >", "<digit>")
+                if stemed_kp.strip() != "":
+                    stemed_prediction.append(stemed_kp.strip())
+
+        # make prediction duplicates free but preserve order for @topk
+
+        prediction_dict = {}
+        stemed_prediction_ = []
+        for kp in stemed_prediction:
+            if kp not in prediction_dict:
+                prediction_dict[kp] = 1
+                stemed_prediction_.append(kp)
+        stemed_prediction = stemed_prediction_
+
+        processed_predictions.extend(stemed_prediction)
+
+    return processed_predictions
+
+def process_srcs(srcs):
+    stemmer = PorterStemmer()
+    processed_srcs = []
+    tokenized_src = srcs.split()  # Split the string into words
+    tokenized_stemed_src = [stemmer.stem(token.strip().lower()).strip() for token in tokenized_src]
+    stemed_src = " ".join(tokenized_stemed_src).strip()
+    processed_srcs.append(stemed_src)
+    return processed_srcs
+
+def add_sep_and_kpp(token_predictions, all_kpp_values):
+    new_token_list = []
+    new_kpp_list = []
+
+    for tokens, kpp_values in zip(token_predictions, all_kpp_values):
+        merged_tokens = []
+        merged_kpp = []
+        kpp_index = 0
+
+        for i, sublist in enumerate(tokens):
+            merged_tokens.extend(sublist)
+            merged_kpp.extend(kpp_values[kpp_index:kpp_index + len(sublist)])
+            kpp_index += len(sublist)
+
+            if i < len(tokens) - 1:
+                merged_tokens.append('<sep>')
+                merged_kpp.append(0)  # Add corresponding 0 for <sep>
+
+        new_token_list.append(merged_tokens)
+        new_kpp_list.append(merged_kpp)
+
+    return new_token_list, new_kpp_list
+
+def probab_llama_boxplots(dataset): #taken from line 811 one2seq code and adapted for llama
+
+    kp_predictions, probabilities, token_predictions, src, targets, all_kpp_values=load_llama(dataset)
+    context_lines=src
+    token_predictions,scores=add_sep_and_kpp(token_predictions, probabilities)
+    
+    predictions=[]
+    srcs=[]
+    
+    for i in range(len(src)):
+        temp_predictions = process_predictions(token_predictions[i])
+        #temp_srcs = process_srcs(src[i])
+        predictions.append(temp_predictions)
+        #srcs.append(temp_srcs)
+        
+        
+    p_bins = [[] for i in range(5)]
+    a_bins = [[] for i in range(5)]
 
 
+    for i, pred in enumerate(predictions):
+        stemmed_context = stem_text(context_lines[i])
+        kp_collect = []
+        prob_collect = []
+        kp_preds = set()
+        for j, token in enumerate(pred):
+            if token == "<sep>":
+                if len(kp_collect) > 0:
+
+                    stemmed_kp = stem_text(' '.join(kp_collect))
+
+                    if stemmed_kp not in kp_preds:
+                        kp_preds.add(stemmed_kp)
+                    else:
+                        kp_collect, prob_collect = [], []
+                        continue
+
+                    if stemmed_kp in stemmed_context:
+                        for num, prob in enumerate(prob_collect[:5]):
+                            p_bins[num].append(prob)
+                    else:
+                        for num, prob in enumerate(prob_collect[:5]):
+                            a_bins[num].append(prob)
+
+                    kp_collect, prob_collect = [], []
+            else:
+                if len(pred) != len(scores[i]):
+                    #print(kp_collect, len(pred))
+                    break
+                kp_collect.append(token)
+                prob_collect.append(scores[i][j])
+        if len(kp_collect) > 0:
+
+
+
+            stemmed_kp = stem_text(' '.join(kp_collect))
+            if stemmed_kp in kp_preds:
+                continue
+
+            if stemmed_kp in stemmed_context:
+                for num, prob in enumerate(prob_collect[:5]):
+                    p_bins[num].append(prob)
+            else:
+                for num, prob in enumerate(prob_collect[:5]):
+                    a_bins[num].append(prob)
+    return [p_bins, a_bins]
+#probab_llama_boxplots("semeval")                    
+
+def probab_phi_boxplots(dataset): #taken from line 811 one2seq code and adapted for llama
+
+    kp_predictions, probabilities, token_predictions, src, targets, all_kpp_values=load_phi(dataset)
+    context_lines=src
+    token_predictions,scores=add_sep_and_kpp(token_predictions, probabilities)
+    
+    predictions=[]
+    srcs=[]
+    
+    for i in range(len(src)):
+        temp_predictions = process_predictions(token_predictions[i])
+        #temp_srcs = process_srcs(src[i])
+        predictions.append(temp_predictions)
+        #srcs.append(temp_srcs)
+        
+        
+    p_bins = [[] for i in range(5)]
+    a_bins = [[] for i in range(5)]
+
+
+    for i, pred in enumerate(predictions):
+        stemmed_context = stem_text(context_lines[i])
+        kp_collect = []
+        prob_collect = []
+        kp_preds = set()
+        for j, token in enumerate(pred):
+            if token == "<sep>":
+                if len(kp_collect) > 0:
+
+                    stemmed_kp = stem_text(' '.join(kp_collect))
+
+                    if stemmed_kp not in kp_preds:
+                        kp_preds.add(stemmed_kp)
+                    else:
+                        kp_collect, prob_collect = [], []
+                        continue
+
+                    if stemmed_kp in stemmed_context:
+                        for num, prob in enumerate(prob_collect[:5]):
+                            p_bins[num].append(prob)
+                    else:
+                        for num, prob in enumerate(prob_collect[:5]):
+                            a_bins[num].append(prob)
+
+                    kp_collect, prob_collect = [], []
+            else:
+                if len(pred) != len(scores[i]):
+                    #print(kp_collect, len(pred))
+                    break
+                kp_collect.append(token)
+                prob_collect.append(scores[i][j])
+        if len(kp_collect) > 0:
+
+
+
+            stemmed_kp = stem_text(' '.join(kp_collect))
+            if stemmed_kp in kp_preds:
+                continue
+
+            if stemmed_kp in stemmed_context:
+                for num, prob in enumerate(prob_collect[:5]):
+                    p_bins[num].append(prob)
+            else:
+                for num, prob in enumerate(prob_collect[:5]):
+                    a_bins[num].append(prob)
+    return [p_bins, a_bins]
 
 
 def box_plots(dataset):
@@ -759,13 +849,15 @@ def box_plots(dataset):
     transformer = probab_transformer_boxplots(dataset)
     trans2set = probab_transformer_boxplots(dataset, model = 'one2set_')
     llama_bins=probab_llama_boxplots(dataset)
+    p_bins, a_bins=llama_bins
+    print(p_bins)
     phi_bins=probab_phi_boxplots(dataset)
 
 
     make_sns_boxplot(exhird_bins, transformer, trans2set, bart_bins, t5_bins,llama_bins,phi_bins,
                      'all_5_boxplot_' + dataset + '_present_absent_', 'Token position',
                      'Probability', '')
-#box_plots('kp20k')
+box_plots('kp20k')
 
 def line_plot_reliability(model,json_name, num_buckets, color, num, axes_name):
     with open('data_dump/'+model+'_'+json_name+'.json', 'r') as f:
@@ -862,8 +954,8 @@ def plot_reliability(json_name, plot_name, num_buckets=10, model1 = 'exhird', mo
 #plot_reliability('calibrate_kpp_values', plot_name='Calibration_5_models', num_buckets=10)
 
 def plot_relative_pos_graph(model1 = 'exhird_h_', model2='t5', model3='one2seq_', model4='bart', model5 = 'one2set_', model6='llama',model7='phi'):
-    #datasets =[ 'kp20k','krapivin', 'inspec','semeval']
-    datasets=['semeval','krapivin']
+    datasets =[ 'kp20k','krapivin', 'inspec','semeval']
+    #datasets=['semeval','krapivin']
     percentages = ['0-20', '20-40', '40-60', '60-80', '80-100']
 
 
@@ -892,7 +984,7 @@ def plot_relative_pos_graph(model1 = 'exhird_h_', model2='t5', model3='one2seq_'
 
 
         #ax = fig.add_axes([0, 0, 1, 1])
-        width = 0.015
+        width = 0.012
         j += 1
         
         axes1.bar(X, exhird_errors, color=color[1], width=width, label='ExHiRD', edgecolor='black')
@@ -933,4 +1025,4 @@ def plot_relative_pos_graph(model1 = 'exhird_h_', model2='t5', model3='one2seq_'
     plt.close()
 
 
-plot_relative_pos_graph()
+#plot_relative_pos_graph()

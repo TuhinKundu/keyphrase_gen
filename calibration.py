@@ -675,6 +675,11 @@ def calibrate_all_datasets(model = 't5'):
             dict[dataset] = calibrate_bart(dataset, num_buckets=10).tolist()
         elif model == 'one2seq':
             dict[dataset] = calibrate_one2set(dataset, num_buckets=10, model2=model+'_').tolist()
+        elif model == 'llama':
+            dict[dataset] = calibrate_llama(dataset, num_buckets=10).tolist()
+        elif model == 'phi':
+            dict[dataset] = calibrate_phi(dataset, num_buckets=10).tolist()
+            
         else:
             dict[dataset] = calibrate_one2set(dataset, num_buckets=10, model2=model + '_').tolist()
     json_name = model+'_calibrate_kpp_values'
@@ -682,11 +687,11 @@ def calibrate_all_datasets(model = 't5'):
         json.dump(dict,f)
 
 
-#for model in ['exhird', 't5', 'bart', 'bart', 'one2seq', 'one2set']:
-#    calibrate_all_datasets(model=model)
+#for model in ['exhird', 't5', 'bart', 'bart', 'one2seq', 'one2set','llama','phi']:
+ #   calibrate_all_datasets(model=model)
 
-
-plot_reliability('calibrate_kpp_values', plot_name='Calibration_new', num_buckets=10, model1='t5', model2='bart')
+#calibrate_all_datasets("phi")
+#plot_reliability('calibrate_kpp_values', plot_name='Calibration_new', num_buckets=10, model1='t5', model2='bart')
 
 #calibrate_exhird('inspec', num_buckets=10)
 #calibrate_t5('inspec', num_buckets=10)
