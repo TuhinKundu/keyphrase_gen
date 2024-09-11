@@ -144,11 +144,16 @@ def get_one2seq_ppl(predictions, scores, context_lines):
                 if len(kp_collect) > 0:
                     ppl = np.prod(prob_collect) ** (-1 / float(len(prob_collect)))
                     stemmed_kp = stem_text(' '.join(kp_collect))
-
+                    #print(prob_collect)
+                    #print(kp_collect)
+                    #print(ppl)
                     if stemmed_kp in stemmed_context:
                         present_ppl.append(ppl)
                     else:
-
+                        #print(stemmed_kp)
+                        #print(stemmed_context)
+                        #print(pred)
+                        #print()
                         absent_ppl.append(ppl)
                     kp_collect, prob_collect = [], []
             else:
