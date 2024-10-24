@@ -1,0 +1,87 @@
+polynomial time algorithm,feedback vertex set,0.46
+experimentation,performance,0.27
+measurement,performance,0.36
+autoimmune,apeced,0.21
+aluminium casting,casting,0.43
+characteristics method,casting,0.32
+enthalpy method,casting,0.3
+two phase solidification,convection,0.31
+rib feature,feature recognition,0.24
+truncation error,singular point,0.04
+wireless sensor networks,graph coloring,0.14
+time division multiple access,tdma,0.34
+mashups,web service,0.09
+brightness constraint,video segmentation,0.33
+reduced service rate,priority queues,0.12
+m buffers,priority queues,0.21
+source pooling,priority queues,0.26
+m buffer,priority queues,0.17
+parallel,multicore,0.32
+algorithm,plane sweep,0.21
+systems,multicore,0.45
+parallel algorithm,multicore,0.35
+challenge,plane sweep,0.03
+efficiency,rectangle intersection,0.28
+effect,plane sweep,0.07
+component,plane sweep,0.06
+process,plane sweep,0.17
+scalability,multicore,0.37
+cluster,multicore,0.38
+mass media,communication channels,0.31
+classification,pca,0.17
+hex o,classification,0.26
+erp feature extraction,electroencephalography,0.37
+reversible change of measure,erlang distribution,0.18
+hrtf,surround audio,0.29
+common acoustical pole and zero,surround audio,0.24
+hrtf model,surround audio,0.29
+e commerce security,internet services,0.13
+gals,synchronization,0.14
+cmos,synchronization,0.15
+organizational structures,strategies for production systems design,0.57
+forecasted order program,strategies for production systems design,0.51
+selectors,randomization,0.28
+deterministic protocols,optimality,0.26
+deterministic broadcasting,optimality,0.2
+deterministic wake up,optimality,0.29
+rns,base transformation,0.19
+context of use,quality,0.37
+design for value,value,0.83
+design for the world,value,0.31
+fugu rubripes,teleost,0.25
+pufferfish,teleost,0.1
+gpcr receptors,duplicated genes,0.18
+nash equilibrium,correlated fading,0.19
+curing agent,embedded capacitors,0.36
+loss factor,embedded capacitors,0.13
+stroke order independent,classifier combination,0.19
+eigenvalues,offline,0.23
+knowledge representation,software tool,0.19
+k d tree,affine invariant,0.08
+k,affine invariant,-0.03
+eta long beta normal term,strong sums,0.15
+dbms,database,0.48
+pseudo dynamic,wrinkling,0.09
+polytope,facets of polyhedra,0.69
+induced clique hole,graph colorings,0.29
+induced hole,graph colorings,0.33
+affine sub model estimation,hybrid systems,0.3
+hyperplane partitions,clustering,0.19
+artificial intelligence,adaptive systems,0.35
+mems,polymer,0.32
+kretschmann sensor,pdms,0.16
+k refinement,strain field measurement,0.25
+non linear constitutive law identification,digital image correlation,0.09
+eulers equations,functional variations,0.37
+chebyshev polynomials,dirichletneumann operators,0.47
+spline curves,voronoi mountain,0.12
+text mining,wordnet,0.24
+lexical knowledge,semantic distance,0.18
+discotex,novelty,0.16
+rule novelty,knowledge hierarchy,0.35
+algorithms,independence system,0.19
+theory,independence system,0.24
+high order,locally symmetric meshes,0.13
+galerkin finite element method,integral identities,0.25
+local estimates,integral identities,0.27
+software architecture,design pattern,0.44

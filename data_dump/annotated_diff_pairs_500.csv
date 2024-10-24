@@ -1,0 +1,2681 @@
+Keyphrase,Ground Truth,Score
+,,
+polynomial time algorithm,feedback vertex set,
+,,
+end of document,,
+,,
+experimentation,performance,
+,,
+measurement,performance,
+,,
+end of document,,
+,,
+autoimmune,apeced,
+,,
+end of document,,
+,,
+aluminium casting,casting,
+,,
+characteristics method,casting,
+,,
+enthalpy method,casting,
+,,
+two phase solidification,convection,
+,,
+end of document,,
+,,
+rib feature,feature recognition,
+,,
+end of document,,
+,,
+truncation error,singular point,
+,,
+end of document,,
+,,
+wireless sensor networks,graph coloring,
+,,
+time division multiple access,tdma,
+,,
+end of document,,
+,,
+mashups,web service,
+,,
+end of document,,
+,,
+brightness constraint,video segmentation,
+,,
+end of document,,
+,,
+reduced service rate,priority queues,
+,,
+m buffers,priority queues,
+,,
+source pooling,priority queues,
+,,
+m buffer,priority queues,
+,,
+end of document,,
+,,
+parallel,multicore,
+,,
+algorithm,plane sweep,
+,,
+systems,multicore,
+,,
+parallel algorithm,multicore,
+,,
+challenge,plane sweep,
+,,
+efficiency,rectangle intersection,
+,,
+effect,plane sweep,
+,,
+component,plane sweep,
+,,
+process,plane sweep,
+,,
+scalability,multicore,
+,,
+cluster,multicore,
+,,
+end of document,,
+,,
+mass media,communication channels,
+,,
+end of document,,
+,,
+classification,pca,
+,,
+end of document,,
+,,
+hex o,classification,
+,,
+erp feature extraction,electroencephalography,
+,,
+end of document,,
+,,
+reversible change of measure,erlang distribution,
+,,
+end of document,,
+,,
+hrtf,surround audio,
+,,
+common acoustical pole and zero,surround audio,
+,,
+hrtf model,surround audio,
+,,
+end of document,,
+,,
+e commerce security,internet services,
+,,
+end of document,,
+,,
+gals,synchronization,
+,,
+cmos,synchronization,
+,,
+end of document,,
+,,
+organizational structures,strategies for production systems design,
+,,
+forecasted order program,strategies for production systems design,
+,,
+end of document,,
+,,
+selectors,randomization,
+,,
+deterministic protocols,optimality,
+,,
+deterministic broadcasting,optimality,
+,,
+deterministic wake up,optimality,
+,,
+end of document,,
+,,
+end of document,,
+,,
+rns,base transformation,
+,,
+end of document,,
+,,
+context of use,quality,
+,,
+design for value,value,
+,,
+design for the world,value,
+,,
+end of document,,
+,,
+fugu rubripes,teleost,
+,,
+pufferfish,teleost,
+,,
+gpcr receptors,duplicated genes,
+,,
+end of document,,
+,,
+nash equilibrium,correlated fading,
+,,
+end of document,,
+,,
+curing agent,embedded capacitors,
+,,
+loss factor,embedded capacitors,
+,,
+end of document,,
+,,
+stroke order independent,classifier combination,
+,,
+eigenvalues,offline,
+,,
+end of document,,
+,,
+end of document,,
+,,
+end of document,,
+,,
+knowledge representation,software tool,
+,,
+end of document,,
+,,
+k d tree,affine invariant,
+,,
+k,affine invariant,
+,,
+end of document,,
+,,
+end of document,,
+,,
+end of document,,
+,,
+end of document,,
+,,
+eta long beta normal term,strong sums,
+,,
+end of document,,
+,,
+dbms,database,
+,,
+end of document,,
+,,
+pseudo dynamic,wrinkling,
+,,
+end of document,,
+,,
+polytope,facets of polyhedra,
+,,
+induced clique hole,graph colorings,
+,,
+induced hole,graph colorings,
+,,
+end of document,,
+,,
+affine sub model estimation,hybrid systems,
+,,
+hyperplane partitions,clustering,
+,,
+end of document,,
+,,
+end of document,,
+,,
+artificial intelligence,adaptive systems,
+,,
+end of document,,
+,,
+mems,polymer,
+,,
+kretschmann sensor,pdms,
+,,
+end of document,,
+,,
+k refinement,strain field measurement,
+,,
+non linear constitutive law identification,digital image correlation,
+,,
+end of document,,
+,,
+eulers equations,functional variations,
+,,
+chebyshev polynomials,dirichletneumann operators,
+,,
+end of document,,
+,,
+spline curves,voronoi mountain,
+,,
+end of document,,
+,,
+text mining,wordnet,
+,,
+lexical knowledge,semantic distance,
+,,
+discotex,novelty,
+,,
+rule novelty,knowledge hierarchy,
+,,
+end of document,,
+,,
+algorithms,independence system,
+,,
+theory,independence system,
+,,
+end of document,,
+,,
+high order,locally symmetric meshes,
+,,
+galerkin finite element method,integral identities,
+,,
+local estimates,integral identities,
+,,
+end of document,,
+,,
+software architecture,design pattern,
+,,
+end of document,,
+,,
+end of document,,
+,,
+end of document,,
+,,
+polynomial time many one reducibility,deterministic reducibility,0.4
+,,
+cryptography,order,0.05
+,,
+end of document,,
+,,
+end of document,,
+,,
+montgomery modular exponentiation,montgomery,0.35
+,,
+field programmable gate arrays,systolic array,0.2
+,,
+cryptography,fpga,0.05
+,,
+end of document,,
+,,
+artificial neural networks,supervised and unsupervised learning,0.4
+,,
+pattern recognition,dynamic security assessment,0.1
+,,
+end of document,,
+,,
+insertion loss,mosfet switch,0.05
+,,
+isolation,rf cmos,0.03
+,,
+s parameters,spdt switch,0.2
+,,
+end of document,,
+,,
+hashing,probabilistic verification,0.2
+,,
+finite fields,multiple valued function,0.25
+,,
+e,equivalence checking,0.15
+,,
+end of document,,
+,,
+document engineering,document annotation and structuring,0.45
+,,
+end of document,,
+,,
+seizure detection,channel selection,0.2
+,,
+eeg detection,electroencephalography,0.65
+,,
+end of document,,
+,,
+end of document,,
+,,
+rfid,genetic algorithms,0.1
+,,
+picking cart,artificial immune system,0.05
+,,
+end of document,,
+,,
+loops,languages,0.1
+,,
+data dependence graph,software pipelining,0.2
+,,
+hyperplane scheduling,modulo scheduling,0.5
+,,
+instruction level parallelism,software pipelining,0.2
+,,
+end of document,,
+,,
+polygonal shapes recognition,overlapping particles recognition,0.4
+,,
+end of document,,
+,,
+approximation algorithm,dimension reduction,0.25
+,,
+sphere,max cut,0.05
+,,
+epsil,max cut,0.01
+,,
+end of document,,
+,,
+credit card industry,market entry,0.1
+,,
+e commerce,market entry,0.35
+,,
+e business,market entry,0.35
+,,
+end of document,,
+,,
+scene analysis,vectorization,0.2
+,,
+graphical statics,graphics,0.6
+,,
+applied projective geometry,geometry,0.6
+,,
+doubilet rota stein double algebra,algebra,0.6
+,,
+3,paper,0
+,,
+end of document,,
+,,
+image advertising,algorithms,0.1
+,,
+visual similarity,algorithms,0.2
+,,
+face detection,algorithms,0.4
+,,
+image salience,algorithms,0.4
+,,
+end of document,,
+,,
+phase sequence,ofdm,0.2
+,,
+end of document,,
+,,
+theory driven backjumping,integrated decision procedures,0.05
+,,
+theory driven deduction,propositional satisfiability,0.15
+,,
+end of document,,
+,,
+klin condition,strongly regular graph,0.1
+,,
+end of document,,
+,,
+end of document,,
+,,
+end of document,,
+,,
+productivity,total factor productivity,0.4
+,,
+end of document,,
+,,
+process oriented view,multimedia effect,0.15
+,,
+text based view,multimedia effect,0.15
+,,
+picture based view,multimedia effect,0.15
+,,
+end of document,,
+,,
+girth,restricted edge connectivity,0.15
+,,
+end of document,,
+,,
+clicks,wikipedia,0.25
+,,
+judgments,wikipedia,0.05
+,,
+evaluation,wikipedia,0.15
+,,
+search engine,wikipedia,0.3
+,,
+relevance,wikipedia,0.15
+,,
+end of document,,
+,,
+recursion,computation,0.4
+,,
+recur,anticipation,0.5
+,,
+end of document,,
+,,
+way below relation,s2 s <digit> continuous poset s2 s <digit> s2 s <digit> s <digit>,0
+,,
+completely regular,s2 s <digit> quasicontinuous poset s2 s <digit> s2 s <digit> s <digit>,0
+,,
+end of document,,
+,,
+np,kolmogorov complexity,0.2
+,,
+p np,kolmogorov complexity,0.2
+,,
+end of document,,
+,,
+hybrid graph model,spectral clustering,0.15
+,,
+superpixel,segmentation,0.25
+,,
+end of document,,
+,,
+structural elements,membrane,0.05
+,,
+end of document,,
+,,
+end of document,,
+,,
+high k,silicon oxide,0.05
+,,
+pbti characterization,silicon oxide,0.05
+,,
+end of document,,
+,,
+end of document,,
+,,
+hermite interpolation,complex representation,0.15
+,,
+ph cuts of laurent series,ph skew cut,0.35
+,,
+end of document,,
+,,
+end of document,,
+,,
+hill climbing,hierarchical control,0.05
+,,
+if and only if problem,transposition,0.05
+,,
+end of document,,
+,,
+medical symptom phrases,information extraction,0.2
+,,
+end of document,,
+,,
+end of document,,
+,,
+reliability,performance,0.05
+,,
+end of document,,
+,,
+median cut,reflective sphere,0.2
+,,
+level of details,shadow generation,0.15
+,,
+shadow softening,shadow generation,0.55
+,,
+end of document,,
+,,
+quantum well,coupling efficiency,0.15
+,,
+end of document,,
+,,
+rerouting,fault tolerance,0.1
+,,
+end of document,,
+,,
+multilingual ontology,ontology,0.6
+,,
+cross language information retrieval,semantic similarity,0.2
+,,
+end of document,,
+,,
+end of document,,
+,,
+causality prediction,topological similarity,0.15
+,,
+end of document,,
+,,
+r package,beta regression,0.25
+,,
+r beta tree,beta regression,0.25
+,,
+end of document,,
+,,
+morphological clique,combinatorial optimization,0.15
+,,
+multi criteria decision,combinatorial optimization,0.1
+,,
+end of document,,
+,,
+random polynomial factorization,random riemann surface,0.35
+,,
+end of document,,
+,,
+voting scheme,classifier combination,0.2
+,,
+feature extraction,classifier combination,0.2
+,,
+end of document,,
+,,
+wald statistic,gmm,0.15
+,,
+lagrange multiplier statistic,mixing,0.05
+,,
+distance statistic,mixing,0.05
+,,
+end of document,,
+,,
+multi relay,cooperative diversity,0.15
+,,
+cooperation selection,relay selection,0.15
+,,
+end of document,,
+,,
+video indexing,shot change detection,0.2
+,,
+end of document,,
+,,
+supra segmental features,emotional speech transformation,0.05
+,,
+end of document,,
+,,
+collage of words,regular languages,0.05
+,,
+end of document,,
+,,
+trust,roi,0.05
+,,
+publish subscribe,roi,0.05
+,,
+end of document,,
+,,
+voting,friendship relations,0.05
+,,
+synchronization,friendship relations,0.05
+,,
+e news,social media website,0.35
+,,
+end of document,,
+,,
+end of document,,
+,,
+ezpal,knowledge acquisition,0.05
+,,
+axioms,knowledge acquisition,0.05
+,,
+ontology,knowledge representation,0.05
+,,
+end of document,,
+,,
+end of document,,
+,,
+end of document,,
+,,
+end of document,,
+,,
+end of document,,
+,,
+primarily print,libraries,0.15
+,,
+e learning,digital libraries,0.2
+,,
+end of document,,
+,,
+cytokines,novel therapies,0.05
+,,
+homing,multiple myeloma,0.02
+,,
+angiogenesis,bone marrow microenvironment,0.2
+,,
+mri,multiple myeloma,0.18
+,,
+end of document,,
+,,
+backlog analysis,network service curve,0.12
+,,
+end of document,,
+,,
+multi field variational principle,meshfree methods,0.1
+,,
+huwashizu principle,locking,0.05
+,,
+end of document,,
+,,
+dialectic theory,argumentation schemes,0.05
+,,
+end of document,,
+,,
+highlight conjecture,tree graphs,0.02
+,,
+lulu filtering,digital filters,0.46
+,,
+end of document,,
+,,
+end of document,,
+,,
+verification and validation indices,validation index,0.4
+,,
+end of document,,
+,,
+end of document,,
+,,
+slope parameter,error variance,0.15
+,,
+sensitivity analysis,measurement errors,0.2
+,,
+end of document,,
+,,
+exact solution,variational iteration method,0.1
+,,
+boundary condition,heat equation,0.05
+,,
+end of document,,
+,,
+neighborhood search,scheduling,0.23
+,,
+local search,scheduling,0.23
+,,
+end of document,,
+,,
+circuits,inductive interconnect,0.11
+,,
+effect,inductive interconnect,0.06
+,,
+paper,inductive interconnect,0.04
+,,
+transit,inductive interconnect,0.19
+,,
+timing,inductive interconnect,0.06
+,,
+errors,transient power dissipation,0.03
+,,
+end of document,,
+,,
+rungekutta scheme,76h05,0.01
+,,
+navierstokes equations,76h05,0.01
+,,
+cfl number,76h05,0.01
+,,
+roe scheme,76h05,0.01
+,,
+cusp scheme,76h05,0.01
+,,
+turbulence,76h05,0.01
+,,
+end of document,,
+,,
+staller start,domination game,0.06
+,,
+comb,realizations,0.04
+,,
+05c15,realizations,0.03
+,,
+05c85,realizations,0.06
+,,
+end of document,,
+,,
+point splatting,surface fitting,0.13
+,,
+end of document,,
+,,
+sequence analysis,gene prediction,0.25
+,,
+genetic structure analysis,gene prediction,0.55
+,,
+end of document,,
+,,
+tcp,multiple interface,0.23
+,,
+pnea,local domain,0.26
+,,
+end of document,,
+,,
+output query,instance equivalent queries,0.4
+,,
+utility,instance equivalent queries,0.12
+,,
+end of document,,
+,,
+semiempirical molecular orbital method,quantum chemical calculations,0.15
+,,
+end of document,,
+,,
+global illumination,task parallelism,0.12
+,,
+sb pram,scalability,0.25
+,,
+parallel computing,task parallelism,0.25
+,,
+end of document,,
+,,
+end of document,,
+,,
+end of document,,
+,,
+end of document,,
+,,
+end of document,,
+,,
+image processing,neural network,0.34
+,,
+end of document,,
+,,
+arithmetic coding,rate control,0.12
+,,
+end of document,,
+,,
+hysteroromy,uterine myoma,0.2
+,,
+enucleation,laparotomy,0.2
+,,
+suturing,laparotomy,0.12
+,,
+extraction,laparotomy,0.16
+,,
+uterus sut,fertility,
+,,0.13
+end of document,,
+,,
+antioxidant,dft,0.13
+,,
+electron transfer,sequential proton loss electron transfer,0.65
+,,
+end of document,,
+,,
+event based programming,distributed,0.2
+,,
+event based software,distributed,0.2
+,,
+end of document,,
+,,
+cocoa,pedals,0.05
+,,
+mathematica,symbolic computing,0.18
+,,
+end of document,,
+,,
+end of document,,
+,,
+ternary description language,axioms,0.06
+,,
+axiomatic system,syntactical priority,0.2
+,,
+end of document,,
+,,
+end of document,,
+,,
+ear tag,electronic eartag,0.6
+,,
+end of document,,
+,,
+end of document,,
+,,
+sensor fusion,privacy protection,0.15
+,,
+end of document,,
+,,
+error resilience,approximate authentication,0.15
+,,
+end of document,,
+,,
+java,distributed resources,0.2
+,,
+end of document,,
+,,
+competitive analysis of algorithms,warehouse management,0.15
+,,
+end of document,,
+,,
+end of document,,
+,,
+parity games,tree width,0.2
+,,
+buchi automata,tree width,0.15
+,,
+alternating automata,tree width,0.15
+,,
+end of document,,
+,,
+product line selection and pricing,pricing,0.25
+,,
+branch and bound,heuristics,0.25
+,,
+operations,heuristics,0.05
+,,
+end of document,,
+,,
+air vehicle,vibrations,0.15
+,,
+end of document,,
+,,
+concept mapping,work flow effects,0.13
+,,
+physician satisfaction,work flow effects,0.2
+,,
+end of document,,
+,,
+extrapolation boundary,stent,0.05
+,,
+end of document,,
+,,
+coherence,simplification rules,0.06
+,,
+boolean formulas,probabilistic satisfiability,0.15
+,,
+np complete problems,probabilistic satisfiability,0.16
+,,
+end of document,,
+,,
+asynchronous broadcast,distributed greedy algorithm,0.15
+,,
+end of document,,
+,,
+undesirable output,resource cities,0.05
+,,
+malmquist resource performance index,resource cities,0.04
+,,
+end of document,,
+,,
+swarm intelligence,ant colony optimization,0.2
+,,
+end of document,,
+,,
+end of document,,
+,,
+augmentation,global illumination,0.15
+,,
+camera image,global illumination,0.25
+,,
+shadow maps,augmented image synthesis,0.16
+,,
+end of document,,
+,,
+snp,local alignment,0.05
+,,
+end of document,,
+,,
+timing behaviour,scalar property,0.05
+,,
+end of document,,
+,,
+libsvm,regression,0.1
+,,
+bias variance decomposition,regression,0.1
+,,
+svm benchmarking,regression,0.1
+,,
+end of document,,
+,,
+cascade,pda,0.05
+,,
+mobile,pda,0.05
+,,
+end of document,,
+,,
+rewriting,term rewriting,0.6
+,,
+first order logic,term rewriting,0.15
+,,
+real closed fields,polynomial orderings,0.2
+,,
+tarski's logic,polynomial orderings,0.1
+,,
+end of document,,
+,,
+time correlation law,coherent energy,0.1
+,,
+spectral analysis,coherent energy,0.15
+,,
+end of document,,
+,,
+end of document,,
+,,
+terrorism,intelligent analysis,0.2
+,,
+end of document,,
+,,
+lyapunov stability,gradient descent,0.05
+,,
+end of document,,
+,,
+data integrity,recruit distribution,0.04
+,,
+marine personnel management,recruit distribution,0.05
+,,
+end of document,,
+,,
+homogenization,lattice boltzmann methods,0.05
+,,
+end of document,,
+,,
+end of document,,
+,,
+separator,polyhedra,0.05
+,,
+complexity,optimization,0.07
+,,
+graph algorithms,approximation algorithms,0.65
+,,
+k ) free graphs,polyhedra,0.14
+,,
+end of document,,
+,,
+z isomers,antioxidants,0.05
+,,
+pcm,antioxidants,0.05
+,,
+reactivity,antioxidants,0.2
+,,
+df,antioxidants,0.05
+,,
+end of document,,
+,,
+design practice,aesthetics,0.3
+,,
+end of document,,
+,,
+multi agent systems,agent technologies,0.6
+,,
+end of document,,
+,,
+weighted dissimilarity,fuzzy numbers,0.2
+,,
+end of document,,
+,,
+end of document,,
+,,
+binding,switching activity,0.1
+,,
+lagrange multipliers,bound estimation,0.1
+,,
+resource sharing,power estimation,0.2
+,,
+scheduling algorithms,switching activity,0.1
+,,
+end of document,,
+,,
+end of document,,
+,,
+end of document,,
+,,
+visual input hci,hci,0.35
+,,
+end of document,,
+,,
+common sense,developing country,0.05
+,,
+wsn deployment,wireless sensor network,0.8
+,,
+end of document,,
+,,
+euler equations,stefan problem,0.2
+,,
+end of document,,
+,,
+macwilliams identities,binomial moments,0.05
+,,
+end of document,,
+,,
+end of document,,
+,,
+artificial environments,multimodal interactions,0.2
+,,
+neurocognitive development,verbal nonverbal development,0.25
+,,
+natural environments,multimodal interactions,0.15
+,,
+neuroplasticity,positive emotion,0.05
+,,
+neuronal organization and reorganization,multimodal interactions,0.07
+,,
+end of document,,
+,,
+symmetric iv i v curve,iv i v curve iv i v iv i v i v,0.6
+,,
+atk package,symmetry,0.15
+,,
+end of document,,
+,,
+fuzzy reliability,nonlinear programming,0.1
+,,
+repairable industrial system,flt technique,0.13
+,,
+fuzzy c means clustering,genetic algorithm,0.3
+,,
+end of document,,
+,,
+magnetism,dysprosium,0.05
+,,
+end of document,,
+,,
+nonlinear optimization,economic dispatch,0.05
+,,
+end of document,,
+,,
+spectral methods,compact finite differences,0.15
+,,
+unsteady flow,incompressible navier stokes,0.13
+,,
+end of document,,
+,,
+end of document,,
+,,
+mathematical model,immune system,0.05
+,,
+end of document,,
+,,
+fast and slow dynamics of stiff systems,invariant manifolds,0.06
+,,
+end of document,,
+,,
+adaptive comb filter,comb filter,0.85
+,,
+notch gain,comb filter,0.05
+,,
+lms algorithm,adaptive algorithm,0.25
+,,
+end of document,,
+,,
+usability,heuristic usability evaluation,0.4
+,,
+telehealth,telemedicine,0.8
+,,
+e health,telemedicine,0.7
+,,
+end of document,,
+,,
+conditionally contractive,banach lattice,0.05
+,,
+end of document,,
+,,
+dig35,multimedia standards,0.15
+,,
+metadata management,personal content management,0.2
+,,
+end of document,,
+,,
+end of document,,
+,,
+turbulence,physical modelling,0.1
+,,
+ground level concentration,concentration profiles,0.35
+,,
+end of document,,
+,,
+user profile,personalization,0.5
+,,
+query expansion,summarization,0.2
+,,
+personalized search results,search engine,0.65
+,,
+end of document,,
+,,
+diffusion limited aggregation,aggregation,0.6
+,,
+fractal growth,brownian motion,0.05
+,,
+frac,dla,0.05
+,,
+end of document,,
+,,
+cognitive skill models,spoken dialog,0.2
+,,
+end of document,,
+,,
+end of document,,
+,,
+bit parallel,random walks,0.15
+,,
+randomized algorithm,random walks,0.3
+,,
+end of document,,
+,,
+end of document,,
+,,
+end of document,,
+,,
+end of document,,
+,,
+stone vector lattice,computable analysis,0.1
+,,
+end of document,,
+,,
+technology acceptance model,adoptions,0.1
+,,
+trust model,adoptions,0.05
+,,
+end of document,,
+,,
+superscalar,low power,0.06
+,,
+end of document,,
+,,
+end of document,,
+,,
+addressing,coupled noise,0.05
+,,
+computation,timing optimization,0.06
+,,
+reduction,timing optimization,0.05
+,,
+layout,timing optimization,0.04
+,,
+paper,coupled noise,0.05
+,,
+express,coupled noise,0.05
+,,
+topologies,signal integrity,0.1
+,,
+input,coupled noise,0.05
+,,
+errors,coupled noise,0.05
+,,
+order,coupled noise,0.05
+,,
+optimality,timing optimization,0.05
+,,
+end of document,,
+,,
+energy efficient,server consolidation,0.1
+,,
+end of document,,
+,,
+plasmonic condition,tapered profiles,0.05
+,,
+end of document,,
+,,
+end of document,,
+,,
+stateful decryption,leakage resilient cryptography,0.07
+,,
+94a60,cryptography,0.15
+,,
+68p25,cryptography,0.15
+,,
+end of document,,
+,,
+repetitive character behaviour,character segmentation,0.25
+,,
+image interpolation,interpolation,0.6
+,,
+image restoration,character segmentation,0.35
+,,
+end of document,,
+,,
+endothelial cells,inflammation,0.15
+,,
+vascular smooth muscle cells,inflammation,0.15
+,,
+end of document,,
+,,
+etch rate,surface roughness,0.05
+,,
+end of document,,
+,,
+transcoding proxy,streaming media distribution,0.15
+,,
+video object profit function,streaming media distribution,0.15
+,,
+end of document,,
+,,
+requirements refinement,software engineering,0.15
+,,
+end of document,,
+,,
+gravity,consolidation,0.05
+,,
+deformation,consolidation,0.05
+,,
+end of document,,
+,,
+communication structure,collective action,0.05
+,,
+end of document,,
+,,
+consort,checklists,0.05
+,,
+end of document,,
+,,
+software testing,testing,0.6
+,,
+software maintenance,testing,0.46
+,,
+end of document,,
+,,
+logit model,adaptive algorithm,0.15
+,,
+non informative priors,adaptive algorithm,0.15
+,,
+end of document,,
+,,
+end of document,,
+,,
+derivative,schwartz distribution,0.05
+,,
+end of document,,
+,,
+informal,internet,0.15
+,,
+behavioral,internet,0.05
+,,
+economics,internet,0.05
+,,
+computation,internet,0.15
+,,
+linking,internet,0.24
+,,
+distributed,internet,0.18
+,,
+data,information infrastructure,0.1
+,,
+sorting,internet,0.05
+,,
+applications,internet,0.2
+,,
+high performance computing,artificial intelligence,0.15
+,,
+cognition,internet,0.05
+,,
+computational,internet,0.15
+,,
+end of document,,
+,,
+planning,gis,0.12
+,,
+online systems,web,0.25
+,,
+end of document,,
+,,
+fuzzy sets,quantitative imaging,0.15
+,,
+neural networks,evolutionary algorithms,0.15
+,,
+rough sets,quantitative imaging,0.1
+,,
+selection,segmentation,0.1
+,,
+swarm intelligence based decision making,evolutionary algorithms,0.4
+,,
+end of document,,
+,,
+domain decomposition,parallel particle tracking,0.15
+,,
+end of document,,
+,,
+gaussian elimination,minimal triangulation,0.05
+,,
+end of document,,
+,,
+digital services,e government,0.25
+,,
+end of document,,
+,,
+incremental redundancy,mimo system,0.15
+,,
+v blast,mimo system,0.05
+,,
+forward error correction,mimo system,0.04
+,,
+automatic repeat request,mimo system,0.05
+,,
+adaptive code selection,hybrid fec arq scheme,0.15
+,,
+end of document,,
+,,
+averaging lateration,lateration,0.65
+,,
+mixture of gaussians,robust averaging,0.05
+,,
+cramrrao lower bound,robust estimator,0.06
+,,
+trimmed mean robust averager,robust estimator,0.3
+,,
+end of document,,
+,,
+spatially correlated noise,turbo code,0.1
+,,
+cramer rao bound,expectation maximization,0.05
+,,
+end of document,,
+,,
+dataflow,parameter exploration,0.05
+,,
+scalability,parameter exploration,0.15
+,,
+s,kepler,0
+,,
+end of document,,
+,,
+communities,group context,0.3
+,,
+applications,context,0.2
+,,
+interfaces,context,0.2
+,,
+developer,context,0.2
+,,
+informal,context,0.05
+,,
+computation,group context,0.05
+,,
+goals,context,0.04
+,,
+change,group context,0.05
+,,
+end of document,,
+,,
+autonomy,cooperation,0.1
+,,
+guaranties,trust,0.1
+,,
+resemblance,trust,0.05
+,,
+end of document,,
+,,
+playful aspects,gamification,0.3
+,,
+learning strategies,gamification,0.3
+,,
+ui design,ubiquitous learning,0.4
+,,
+end of document,,
+,,
+end of document,,
+,,
+association rules,clustering analysis,0.4
+,,
+end of document,,
+,,
+end of document,,
+,,
+middleware,software architectures,0.2
+,,
+cfs,coordination language,0.2
+,,
+end of document,,
+,,
+end of document,,
+,,
+his monitor,questionnaire,0.1
+,,
+feasibility study,evaluation,0.4
+,,
+end of document,,
+,,
+channel estimation,recursive kalman,0.15
+,,
+ofdm,recursive kalman,0.15
+,,
+doubly selective channel,recursive kalman,0.15
+,,
+end of document,,
+,,
+e commerce,web services,0.34
+,,
+end of document,,
+,,
+energy measurement,energy efficiency,0.7
+,,
+end of document,,
+,,
+dna,cancer,0.2
+,,
+sacii,cancer,0.2
+,,
+nari,cancer,0.2
+,,
+end of document,,
+,,
+end of document,,
+,,
+liou wang index,integral value,0.15
+,,
+end of document,,
+,,
+continuous time markov chain,admission control algorithm,0.15
+,,
+end of document,,
+,,
+randomized diffusion,random walk,0.5
+,,
+indivisible loads,random walk,0.15
+,,
+end of document,,
+,,
+end of document,,
+,,
+preference,inconsistency indices,0.1
+,,
+end of document,,
+,,
+sensitivity,queueing,0.05
+,,
+optimum policy,pricing,0.05
+,,
+end of document,,
+,,
+p2p systems,resource discovery,0.05
+,,
+multi dimensional structure,self organizing,0.15
+,,
+mobile agents,self organizing,0.05
+,,
+end of document,,
+,,
+ubiquitous,self organized traffic,0.15
+,,
+scalability,self organized traffic,0.15
+,,
+cost effectiveness,self organized traffic,0.15
+,,
+ivc,traffic lights,0.15
+,,
+end of document,,
+,,
+end of document,,
+,,
+regression model,neural network,0.2
+,,
+end of document,,
+,,
+evolutionary algorithm,simulated annealing,0.2
+,,
+economic dispatch,distributed generation,0.15
+,,
+end of document,,
+,,
+distributed measurement instrument,ethernet network,0.2
+,,
+fpga,ethernet network,0.15
+,,
+pc based monitor station,ethernet network,0.15
+,,
+iec <digit>,ethernet network,0.15
+,,
+ie,ethernet network,0.15
+,,
+end of document,,
+,,
+optimality,flow,0.1
+,,
+end of document,,
+,,
+deterministic de prefix,ds cdma,0.15
+,,
+end of document,,
+,,
+end of document,,
+,,
+motion picture experts group,queue,0.05
+,,
+interfering traffic,batch arrival,0.15
+,,
+end of document,,
+,,
+shape area,fractal dimension,0.15
+,,
+end of document,,
+,,
+dynamic optimization,sleep scheduling,0.2
+,,
+particle swarm optimization,adaptive critic design,0.2
+,,
+end of document,,
+,,
+linearity,recursion,0.15
+,,
+language,recursion,0.15
+,,
+strategies,recursion,0.12
+,,
+end of document,,
+,,
+end of document,,
+,,
+belief hierarchy,belief change,0.65
+,,
+uncertainty,focusing,0.15
+,,
+end of document,,
+,,
+shortest path,two commodity,0.15
+,,
+linear programming reformulation,integer optima,0.15
+,,
+end of document,,
+,,
+super polynomial savings,negation limited circuits,0.15
+,,
+end of document,,
+,,
+end of document,,
+,,
+logging trucks,forestry,0.15
+,,
+transportation,forestry,0.15
+,,
+end of document,,
+,,
+difficulty,balancing,0.15
+,,
+a line balancing package,balancing,0.15
+,,
+end of document,,
+,,
+ensemble learning,feature selection,0.15
+,,
+end of document,,
+,,
+end of document,,
+,,
+theory,formal specification and verification,0.05
+,,
+end of document,,
+,,
+multimedia documents,spatiotemporal operators,0.05
+,,
+adapted query languages,spatiotemporal operators,0.05
+,,
+end of document,,
+,,
+input,tilt input,0.6
+,,
+control,tilt input,0.15
+,,
+human,tilt input,0.05
+,,
+pen,tilt input,0.05
+,,
+posit,tilt input,0.05
+,,
+experimentation,target selection tasks,0.05
+,,
+timing,pressure input,0.15
+,,
+errors,tilt input,0.15
+,,
+design,target selection tasks,0.05
+,,
+guideline,pressure input,0.05
+,,
+end of document,,
+,,
+clinical ordering,cognitive evaluation,0.05
+,,
+humancomputer interaction,distributed cognition,0.06
+,,
+end of document,,
+,,
+multiscale,moving mesh,0.07
+,,
+matrix cracking,interface debonding,0.1
+,,
+optimization,crack propagation,0.1
+,,
+end of document,,
+,,
+online behavior,infertility,0.05
+,,
+social support,stress,0.05
+,,
+end of document,,
+,,
+software implementation,implementation procedures,0.35
+,,
+end of document,,
+,,
+hazard,flooding,0.4
+,,
+gis,flooding,0.15
+,,
+euclidean distance,scaling relationships,0.05
+,,
+end of document,,
+,,
+end of document,,
+,,
+periodic load,reactors control,0.05
+,,
+end of document,,
+,,
+ultrasound,soft thresholding,0.05
+,,
+generalised gaussian distributed,median filter,0.05
+,,
+end of document,,
+,,
+computer based imaging,minimally invasive therapy,0.15
+,,
+segmentation,neurosurgery,0.05
+,,
+registration,neurosurgery,0.05
+,,
+instrument tracking,image guidance,0.05
+,,
+multimodal imaging,interventional mri,0.45
+,,
+mri based image guided surgery,image guidance,0.45
+,,
+end of document,,
+,,
+dynamic response,porous media,0.15
+,,
+end of document,,
+,,
+end of document,,
+,,
+cscl,facebook,0.05
+,,
+end of document,,
+,,
+end of document,,
+,,
+microarray data analysis,gene expression,0.35
+,,
+end of document,,
+,,
+d dimensional systems,multidimensional cellular automata,0.15
+,,
+end of document,,
+,,
+security gateway,web services,0.29
+,,
+end of document,,
+,,
+genetic algorithm,scheduling,0.15
+,,
+local search,scheduling,0.15
+,,
+end of document,,
+,,
+tree seed algorithm,multilevel thresholding,0.15
+,,
+tsa method,multilevel thresholding,0.15
+,,
+swarm intelligence,heuristic search,0.3
+,,
+end of document,,
+,,
+end of document,,
+,,
+end of document,,
+,,
+irreducible,minimality,0.15
+,,
+end of document,,
+,,
+user experience,trust,0.15
+,,
+user perceptions,trust,0.15
+,,
+user interface design,diary study,0.15
+,,
+end of document,,
+,,
+arc disjoint branching flows,branching flow,0.45
+,,
+spanning out trees,disjoint branchings,0.3
+,,
+end of document,,
+,,
+end of document,,
+,,
+rhodamine,waveguide,0.15
+,,
+end of document,,
+,,
+lyosol,graphene,0.15
+,,
+goniometer,light scattering measurement,0.15
+,,
+end of document,,
+,,
+active learning,live programming environments,0.25
+,,
+pedagogical systems,live programming environments,0.4
+,,
+end of document,,
+,,
+density interface,gravity anomaly,0.2
+,,
+tucson basin,gravity anomaly,0.2
+,,
+end of document,,
+,,
+graph based reconstruction,graph cuts,0.3
+,,
+end of document,,
+,,
+usability,heuristics,0.11
+,,
+end of document,,
+,,
+security,dependability,0.1
+,,
+end of document,,
+,,
+ieee 802.15.4,wireless sensor networks,0.35
+,,
+back off,lr wpans,0.15
+,,
+node lifetime,wireless sensor networks,0.15
+,,
+end of document,,
+,,
+presence,navigation models,0.1
+,,
+end of document,,
+,,
+forming processes,sliding contact,0.05
+,,
+atomic kinetic energy,atomic scale,0.35
+,,
+end of document,,
+,,
+ica,nu spherical distributions,0.15
+,,
+isa,symmetric distribution,0.15
+,,
+l p sp,nu spherical distributions,0.15
+,,
+end of document,,
+,,
+data delivery,mobile agents,0.2
+,,
+end of document,,
+,,
+walker lake data set,successive residuals,0.3
+,,
+end of document,,
+,,
+end of document,,
+,,
+matrix analytic method,stochastic decomposition,0.2
+,,
+end of document,,
+,,
+model management,query language,0.15
+,,
+end of document,,
+,,
+electronic commerce,agent mediated electronic commerce,0.65
+,,
+end of document,,
+,,
+constitutive model,initial densities,0.15
+,,
+loadingcollapse volume,initial densities,0.1
+,,
+density effect,unsaturated soils,
+,,0.2
+end of document,,
+,,
+end of document,,
+,,
+end of document,,
+,,
+euler equations,bilinear interpolation,0.25
+,,
+end of document,,
+,,
+end of document,,
+,,
+robust optimal control,learning control,0.35
+,,
+critic signal,learning control,0.15
+,,
+end of document,,
+,,
+simasp,web service,0.2
+,,
+end of document,,
+,,
+dimensionality reduction,feature extraction,0.3
+,,
+nave bayes classifier,supervised learning,0.65
+,,
+nonparametric,supervised learning,0.4
+,,
+end of document,,
+,,
+surface models,active contours,0.4
+,,
+image segmentation,topology preservation,0.2
+,,
+end of document,,
+,,
+parameterized surfaces,geodesics,0.4
+,,
+registration,parameterization invariance,0.28
+,,
+end of document,,
+,,
+variable coefficient,homotopy perturbation method,0.15
+,,
+end of document,,
+,,
+05b25,60g57,0.2
+,,
+05c35,60g57,0.2
+,,
+end of document,,
+,,
+unified learner profile,learning styles,0.45
+,,
+end of document,,
+,,
+sms,tv quizzes,0.15
+,,
+human hosted,ethnography,0.1
+,,
+end of document,,
+,,
+artificial channel,ofdm,0.2
+,,
+end of document,,
+,,
+automobile tire,pneumatic tires,0.65
+,,
+large displacements,pneumatic tires,0.15
+,,
+frictional ground contact,pneumatic tires,0.15
+,,
+end of document,,
+,,
+maximum power point tracking,photovoltaic cells,0.15
+,,
+unmanned air vehicle,uav,1
+,,
+pwm,uav,0.15
+,,
+end of document,,
+,,
+end of document,,
+,,
+baire matrices,baire space,0.7
+,,
+baire,baire space,0.8
+,,
+end of document,,
+,,
+excel,axon,0.15
+,,
+end of document,,
+,,
+trabecular bone,osteoclast,0.22
+,,
+osteoclasts,osteocytes,0.35
+,,
+osteoporosis,osteoclast,0.35
+,,
+hydroxyapatite,osteocytes,0.27
+,,
+spongy bone,osteocytes,0.35
+,,
+kinetic model,mineralisation,0.15
+,,
+end of document,,
+,,
+robustness,image watermarking,0.15
+,,
+end of document,,
+,,
+outer product of gradients,dimension reduction,0.2
+,,
+end of document,,
+,,
+end of document,,
+,,
+radar,image fusion,0.15
+,,
+gaussian rayleigh mixture distribution,fuzzy logic,0.2
+,,
+polarimetric data,image fusion,0.25
+,,
+multi view data,image fusion,0.25
+,,
+end of document,,
+,,
+turing machines,satisfiability,0.18
+,,
+boolean circuits,satisfiability,0.14
+,,
+sat problems,satisfiability,0.05
+,,
+end of document,,
+,,
+codomain,cuts,0.1
+,,
+end of document,,
+,,
+mapk,cardiac hypertrophy,0.05
+,,
+jak stat,cardiac myocytes,0.05
+,,
+pkc,cardiac myocytes,0.05
+,,
+calcineurin,cardiac myocytes,0.1
+,,
+ion channels,cardiac myocytes,0.1
+,,
+end of document,,
+,,
+end of document,,
+,,
+end of document,,
+,,
+hierarchical structure,fuzzy labels,0.1
+,,
+boolean query,relational database,0.15
+,,
+end of document,,
+,,
+end of document,,
+,,
+ray caster,webgl,0.05
+,,
+texture slicer,webgl,0.05
+,,
+gpu computing,gpu,0.8
+,,
+end of document,,
+,,
+inversion measure,constant factors,0.15
+,,
+randomized algorithms,priority queues,0.15
+,,
+worst case analysis,priority queues,0.15
+,,
+end of document,,
+,,
+94b05,greedy codes,0.2
+,,
+94b25,greedy codes,0.2
+,,
+end of document,,
+,,
+simulation,state forecasting,0.1
+,,
+eps,maintenance management,0.1
+,,
+end of document,,
+,,
+collaboration,compliance,0.05
+,,
+end of document,,
+,,
+precision agriculture,automatic guidance,0.1
+,,
+end of document,,
+,,
+virulence factors,inhibitor,0.1
+,,
+regulatory networks,boolean network,0.5
+,,
+end of document,,
+,,
+fuzzy bitopological space,alpha level bitopological spaces,0.45
+,,
+fuzzy topology,strong fuzzy pairwise separation axioms,0.45
+,,
+end of document,,
+,,
+end of document,,
+,,
+end of document,,
+,,
+directed network of data blocks,forward network,0.3
+,,
+pls regression,linear regression,0.6
+,,
+score loading vector,forward network,0.15
+,,
+re sampling,pls,0.1
+,,
+pca and pls regression,linear regression,0.3
+,,
+end of document,,
+,,
+joint processing,channel equalizer,0.15
+,,
+end of document,,
+,,
+end of document,,
+,,
+end of document,,
+,,
+end of document,,
+,,
+intelligent learning diagnosis system,fuzzy expert system,0.32
+,,
+thematic learning model,learning diagnosis,0.3
+,,
+knowledge integration,web based learning,0.15
+,,
+end of document,,
+,,
+end of document,,
+,,
+lumbar spine,computed tomography,0.06
+,,
+end of document,,
+,,
+boolean function,lattice,0.05
+,,
+boole,farey sequence,0.05
+,,
+end of document,,
+,,
+spurious pressure modes,mixed finite elements,0.05
+,,
+bdfm1 element pairs,stability,0.05
+,,
+p1dg element pairs,stability,0.05
+,,
+r,stability,0
+,,
+end of document,,
+,,
+quasi floating gate,direct conversion receivers,0.1
+,,
+settling time,dc offset,0.04
+,,
+cmos receiver chain,direct conversion receivers,0.3
+,,
+end of document,,
+,,
+experience evaluation,rule experience,0.47
+,,
+pattern association,rule experience,0.15
+,,
+pattern recognition,classifier systems,0.15
+,,
+mobile robot,reinforcement policy,0.2
+,,
+end of document,,
+,,
+design guidelines,perceptual style,0.15
+,,
+end of document,,
+,,
+end of document,,
+,,
+end of document,,
+,,
+doe,assembly precedence diagrams,0.05
+,,
+heuristics,assembly precedence diagrams,0.05
+,,
+kbe,neural networks,0.05
+,,
+assembly constraints,assembly precedence diagrams,0.42
+,,
+end of document,,
+,,
+end of document,,
+,,
+tunneling behavior,offset voltage,0.05
+,,
+end of document,,
+,,
+chemistry,centrality,0.05
+,,
+end of document,,
+,,
+end of document,,
+,,
+nonstationary signals,time varying filtering,0.05
+,,
+low snr environment,time varying filtering,0.05
+,,
+end of document,,
+,,
+quadrupedal locomotion,rhythmic motion,0.05
+,,
+end of document,,
+,,
+trust region method,filter,0.05
+,,
+end of document,,
+,,
+ls optimization,multilinear pls,0.15
+,,
+end of document,,
+,,
+morphological operator,feature extraction,0.1
+,,
+erosion,symmetry transforms,0.05
+,,
+end of document,,
+,,
+local refinement,projection method,0.05
+,,
+orography,gravity waves,0.05
+,,
+end of document,,
+,,
+motion blur,motion compensated reconstruction,0.3
+,,
+end of document,,
+,,
+optimisation,environment,0.05
+,,
+end of document,,
+,,
+unsupervised construction,optimal experimental design,0.05
+,,
+end of document,,
+,,
+nodule registration,pulmonary nodule registration,0.72
+,,
+ct image,computed tomography,0.28
+,,
+end of document,,
+,,
+lego nxt,social robot,0.2
+,,
+topobo,robotics,0.15
+,,
+learning disabilities,educational technology,0.1
+,,
+end of document,,
+,,
+end of document,,
+,,
+divisor,digit recurrence division,0.3
+,,
+partial remainder,quotient digit selection,0.29
+,,
+redundant divider,digit selector pla,0.22
+,,
+digit selection,quotient digit selection,0.7
+,,
+end of document,,
+,,
+wrist posture,posture,0.68
+,,
+image analysis,posture,0.2
+,,
+end of document,,
+,,
+end of document,,
+,,
+fuzzy less strong semicontinuity,fuzzy topology,0.29
+,,
+end of document,,
+,,
+faulty key,block ciphers,0.15
+,,
+end of document,,
+,,
+graph,unigraphs,0.35
+,,
+algorithm,frequency assignment,0.15
+,,
+l labeling,frequency assignment,0.15
+,,
+end of document,,
+,,
+ground control station,route creation validation algorithms,0.1
+,,
+unmanned aerial system,route creation validation algorithms,0.1
+,,
+autonomous replanning,route creation validation algorithms,0.2
+,,
+end of document,,
+,,
+automatic differentiation,algorithms,0.15
+,,
+frechet derivatives,object oriented matlab,0.15
+,,
+nonlinear bvps,algorithms,0.15
+,,
+end of document,,
+,,
+end of document,,
+,,
+predatorprey system,dispersion,0.15
+,,
+coincidence degree,time delay,0.15
+,,
+end of document,,
+,,
+eavesdropping attack,security,0.2
+,,
+end of document,,
+,,
+orthogonal,package,0.1
+,,
+prism,package,0.05
+,,
+fem,package,0.05
+,,
+end of document,,
+,,
+jealousy,networks,0
+,,
+self esteem,psychological factors,0.15
+,,
+end of document,,
+,,
+pairwise distance,nonlinear dimensionality reduction,0.1
+,,
+manifold learning,nonlinear dimensionality reduction,0.1
+,,
+end of document,,
+,,
+end of document,,
+,,
+contract,outsourcing,0.25
+,,
+software engineering,outsourcing,0.15
+,,
+software process,outsourcing,0.15
+,,
+end of document,,
+,,
+saccule,prefrontal,0.15
+,,
+vep,human,0.15
+,,
+thalamus,prefrontal,0.15
+,,
+otolith,prefrontal,0.15
+,,
+o,human,0
+,,
+end of document,,
+,,
+end of document,,
+,,
+reanalysis,sensitivity reanalysis,0.55
+,,
+structural optimization,efficient reanalysis,0.15
+,,
+repeated analysis,combined approximations,0.15
+,,
+end of document,,
+,,
+online learning environment,e learning,0.85
+,,
+online certification,self learning,0.7
+,,
+end of document,,
+,,
+seam computation,interactive image boundaries,0.15
+,,
+image mosaic,interactive image boundaries,0.4
+,,
+image processing,interactive image boundaries,0.2
+,,
+end of document,,
+,,
+service abstraction,abstraction recovery,0.45
+,,
+service discovery,abstraction recovery,0.15
+,,
+end of document,,
+,,
+model adaptation,speaker adaptation,0.45
+,,
+end of document,,
+,,
+chebyshev polynomials,spectral collocation methods,0.15
+,,
+end of document,,
+,,
+end of document,,
+,,
+allocation,fragmentation,0.1
+,,
+reallocation,fragmentation,0.1
+,,
+dynamic allocation,fragmentation,0.1
+,,
+end of document,,
+,,
+workflow,cpoe,0.05
+,,
+intervention,cpoe,0.05
+,,
+end of document,,
+,,
+collocation matrix,axisymmetric problems,0.05
+,,
+end of document,,
+,,
+bayesian inference,mixture distribution,0.15
+,,
+mcmc,markov chain monte carlo,1
+,,
+end of document,,
+,,
+replica exchange,namd,0.05
+,,
+end of document,,
+,,
+end of document,,
+,,
+statpack,emergencies,0.05
+,,
+end of document,,
+,,
+column generation,balanced matrices,0.05
+,,
+co occurrence graphs,cnf formulas,0.15
+,,
+end of document,,
+,,
+end of document,,
+,,
+recursive least squares,ordered successive interference cancelation,0.05
+,,
+dichotomous coordinate descent,mimo systems,0.05
+,,
+end of document,,
+,,
+orthogonal frequency division multiplexing,interleavers,0.15
+,,
+end of document,,
+,,
+coupled navierstokes and darcy system,two phase flow,0.05
+,,
+end of document,,
+,,
+multilayer perceptron,extreme learning machine,0.22
+,,
+reduced reference model,circular backpropagation,0.25
+,,
+end of document,,
+,,
+batch sequencing,scheduling,0.15
+,,
+dynamic batch sizing,scheduling,0.15
+,,
+end of document,,
+,,
+loss of precision,neumann series,0.15
+,,
+end of document,,
+,,
+ieee 802.11,wireless sensor network,0.5
+,,
+802.15.4,radio over fiber,0.2
+,,
+end of document,,
+,,
+end of document,,
+,,
+distributed data centers,scheduling heuristics,0.15
+,,
+multi objective optimization,scheduling heuristics,0.15
+,,
+end of document,,
+,,
+engineering intent,collaborative engineering,0.37
+,,
+end of document,,
+,,
+end of document,,
+,,
+checkerboard invariants,lattice bgk model,0.15
+,,
+d,accuracy,0
+,,
+end of document,,
+,,
+component interaction automata,partition refinement,0.1
+,,
+end of document,,
+,,
+data replication,data grid,0.38
+,,
+data reliability,data grid,0.4
+,,
+end of document,,
+,,
+approximation algorithms,power assignment,0.15
+,,
+end of document,,
+,,
+anova f,simulation,0.15
+,,
+variance ratio,simulation,0.15
+,,
+end of document,,
+,,
+sequential pattern mining,data mining,0.35
+,,
+end of document,,
+,,
+hardware implementation,prediction,0.05
+,,
+end of document,,
+,,
+mpsoc,communication synthesis,0.05
+,,
+mp3,communication synthesis,0.05
+,,
+rtl synthesis,communication synthesis,0.4
+,,
+rtl bridges,communication synthesis,0.22
+,,
+end of document,,
+,,
+vlsi design,efficient implementation,0.15
+,,
+newspaper layout,strip packing,0.1
+,,
+end of document,,
+,,
+artefacts,phase transition,0.1
+,,
+end of document,,
+,,
+lens model,camera identification,0.23
+,,
+forensic analysis,camera identification,0.05
+,,
+end of document,,
+,,
+end of document,,
+,,
+surgical workflow,workflow,0.59
+,,
+end of document,,
+,,
+seismicity,olivine,0.05
+,,
+seismic velocity,density anomaly,0.2
+,,
+buoyancy forces,phase transitions,0.1
+,,
+end of document,,
+,,
+user preference analysis,social network,0.1
+,,
+dynamic social influence,social network,0.36
+,,
+end of document,,
+,,
+clustering,similarity measure,0.5
+,,
+end of document,,
+,,
+concurrent programs,concurrency,0.75
+,,
+skolem's functions,parallelism,0.15
+,,
+end of document,,
+,,
+concurrency control,decentralization,0.15
+,,
+inconsistency repair,data integration,0.15
+,,
+end of document,,
+,,
+end of document,,
+,,
+feature extraction,face recognition,0.3
+,,
+maximum scatter difference,fisher linear discriminant,0.15
+,,
+end of document,,
+,,
+end of document,,
+,,
+benefits,smes,0.15
+,,
+end of document,,
+,,
+microgrid,distributed energy resources,0.15
+,,
+symmetrical uncertainty,incomplete information,0.1
+,,
+multi objective,incomplete information,0.12
+,,
+end of document,,
+,,
+logical frameworks,rough sets,0.1
+,,
+end of document,,
+,,
+invariant manifold method,optimal vector method,0.05
+,,
+hopf bifurcation,optimal vector method,0.05
+,,
+slow manifold method,optimal vector method,0.05
+,,
+end of document,,
+,,
+gis,accessibility,0.05
+,,
+routes,accessibility,0.05
+,,
+scheduling,accessibility,0.05
+,,
+design,accessibility,0.05
+,,
+human factors,geographic information systems,0.05
+,,
+transit planning,geographic information systems,0.15
+,,
+transit access,accessibility,0.5
+,,
+end of document,,
+,,
+compression,complexity,0.05
+,,
+regular subsquares,square images,0.15
+,,
+image processing,finite automata,0.15
+,,
+end of document,,
+,,
+end of document,,
+,,
+multi channel scattering,multi channel adiabatic approximation,0.5
+,,
+oblate spheroidal eigenvalues,multi channel adiabatic approximation,0.15
+,,
+end of document,,
+,,
+bregman distance,lazy learning,0.15
+,,
+end of document,,
+,,
+transportation,job shop scheduling,0.15
+,,
+alternative route risk,job shop scheduling,0.05
+,,
+end of document,,
+,,
+split forcing,direct forcing method,0.35
+,,
+diffuse interface,stationary complex boundary,0.15
+,,
+sharp interface,stationary complex boundary,0.15
+,,
+end of document,,
+,,
+voxel coverage,coverage representation,0.45
+,,
+3d reconstruction,distance transform,0.15
+,,
+end of document,,
+,,
+resampling,tamper hiding,0.05
+,,
+end of document,,
+,,
+sum optimal,rank number,0.15
+,,
+path,rank number,0.15
+,,
+cycle,rank number,0.15
+,,
+end of document,,
+,,
+automorphism group,orbit,0.05
+,,
+end of document,,
+,,
+facilitation,calcium,0.05
+,,
+priming,calcium,0.05
+,,
+release,calcium,0.05
+,,
+end of document,,
+,,
+viscoelastic,correspondence principle,0.05
+,,
+functionally graded material,linear elasticity,0.15
+,,
+end of document,,
+,,
+power distribution system,power distribution system reconfiguration,0.85
+,,
+optimization,genetic algorithm,0.15
+,,
+arbitrary cost functions,steiner tree problem,0.1
+,,
+end of document,,
+,,
+relative coordination,spatial data,0.15
+,,
+end of document,,
+,,
+end of document,,
+,,
+dft,ab initio,0
+,,
+end of document,,
+,,
+linear time,very large scale integration,0.1
+,,
+single fault,open interconnect,0.1
+,,
+bridging fault,open interconnect,0.1
+,,
+end of document,,
+,,
+hep experiments,asynchronous communications,0.15
+,,
+process control,asynchronous communications,0.15
+,,
+distributed computing,asynchronous communications,0.05
+,,
+end of document,,
+,,
+end of document,,
+,,
+end of document,,
+,,
+goal specificity,mirror neurons,0.05
+,,
+emergence,mirror neurons,0.05
+,,
+end of document,,
+,,
+sbf,iterators,0.15
+,,
+metric,quality models,0.1
+,,
+end of document,,
+,,
+comparison matrix,stability,0.05
+,,
+end of document,,
+,,
+global education,double degree,0.15
+,,
+cs education,curriculum,0.15
+,,
+end of document,,

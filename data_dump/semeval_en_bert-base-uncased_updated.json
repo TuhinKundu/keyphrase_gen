@@ -1,0 +1,1 @@
+{"model_type": "bert-base-uncased", "lang": "en", "bert_exhird_present": 0.23775320051995316, "bert_exhird_absent": 0.03632007782857584, "bert_t5_present": 0.2288286618800959, "bert_t5_absent": 0.03692429639161468}

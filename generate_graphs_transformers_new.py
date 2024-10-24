@@ -3,6 +3,35 @@ import tqdm
 import pandas as pd
 from generate_graphs_transformers import json_load_one2seq
 from utilities.utils import *
+
+
+def load_llama(dataset):
+    with open('graph_outputs/'+dataset+'_llama3_kpp_test.json') as file:
+        json_data = json.load(file)
+
+    kp_predictions = json_data['dup_removed_kp_predictions']
+    probabilities = json_data['probabilities']
+    token_predictions = json_data['dup_removed_token_predictions']
+    src = json_data['src']
+    targets = json_data['targets']
+    all_kpp_values = json_data['dup_removed_kpp']
+
+    return kp_predictions, probabilities, token_predictions, src, targets, all_kpp_values
+
+def load_phi(dataset):
+    with open('graph_outputs/'+dataset+'_phi3_kpp_test.json') as file:
+        json_data = json.load(file)
+
+    kp_predictions = json_data['dup_removed_kp_predictions']
+    probabilities = json_data['probabilities']
+    token_predictions = json_data['dup_removed_token_predictions']
+    src = json_data['src']
+    targets = json_data['targets']
+    all_kpp_values = json_data['dup_removed_kpp']
+
+    return kp_predictions, probabilities, token_predictions, src, targets, all_kpp_values
+
+
 def json_load_dump_t5(dataset, probab = False):
     with open('data_dump/t5_large/' + dataset + '_data.json', 'r') as f:
         dic = json.load(f)
@@ -360,13 +389,19 @@ def get_relative_error_numbers(model, dataset):
         predictions = preprocess_one2seq_predictions_to_kps(raw_predictions)
     elif model == 'bart':
         context_lines, predictions, probs, predicted_tokens, targets = load_bart_preds(dataset)
-
         probs, predictions = remove_duplicates(probs, predictions)
+        
+    elif model == 'llama':
+        predictions, probs, predicted_tokens, context_lines, targets, all_kpp_values=load_llama(dataset)
+    
+    elif model == 'phi':
+        predictions, probs, predicted_tokens, context_lines, targets, all_kpp_values=load_phi(dataset)  
 
     else:
         scores, predictions, context_lines = json_load_one2set(model, dataset.lower())
         predictions = clean_one2set_preds_for_relative_pos(predictions)
         targets = read_one2seq_targets(dataset)
+
 
 
 
